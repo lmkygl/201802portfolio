@@ -1,2 +1,16 @@
 @import '../mixin/config.scss';
 
+.grid {
+    width : $content-width;
+    margin : 0 auto;
+    background-color: $background;
+    overflow: hidden;
+}
+
+.col-12 {
+    width : 100%;
+}
+
+body{
+    background-color:gray;
+}
