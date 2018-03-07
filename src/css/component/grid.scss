@@ -1,14 +1,19 @@
 @import '../mixin/config.scss';
 $grid-spacing: 3%;
-.grid-ui {
-    margin-top: 50px;
+.content-width {
+    width : $max-width;
+    margin: 50px auto;
 }
 
 .grid {
-    width: $max-width;
+    width: $content-width;
     margin: 0 auto;
     background-color: #999;
     overflow: hidden;
+    @include mobile {
+        width : 100%;
+        overflow-x: hidden;
+    }
 }
 
 .row {
