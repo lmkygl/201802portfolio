@@ -1,9 +1,5 @@
 @import '../mixin/config.scss';
-$grid-spacing: 3%;
-.content-width {
-    width : $max-width;
-    margin: 50px auto;
-}
+$grid-spacing: 2%;
 
 .grid {
     width: $content-width;
@@ -19,13 +15,15 @@ $grid-spacing: 3%;
 .row {
     margin-top: $grid-spacing;
     margin-bottom: $grid-spacing;
+    padding: 5px;
+    &.clearfix:after {
+        display: block;
+        clear: both;
+        content: '';
+    }
 }
 
-.clearfix:after {
-    display: block;
-    clear: both;
-    content: '';
-}
+
 
 [class^="col-"] {
     float: left;
