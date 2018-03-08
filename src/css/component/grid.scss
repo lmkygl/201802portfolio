@@ -1,5 +1,5 @@
 @import '../mixin/config.scss';
-$grid-spacing: 16px;
+$grid-spacing: 8px;
 
 .grid {
     width: $content-width;
@@ -19,6 +19,27 @@ $grid-spacing: 16px;
             clear: both;
             content: '';
         }
+
+        .col-1  { width:7.56%; }
+        .col-2  { width:14.16666666666667%; }
+        .col-3  { width:22.75%; }
+        .col-4  { width:31.33333333333333%; }
+        .col-5  { width:39.91666666666667%; }
+        .col-6  { width:48.5%; }
+        .col-7  { width:57.08333333333333%; }
+        .col-8  { width:65.66666666666666%; }
+        .col-9  { width:74.25%; }
+        .col-10 { width:82.83333333333333%; }
+        .col-11 { 
+            .item{
+
+            }
+        }
+        .col-12 { 
+            .item{
+                width:100%;
+            }
+        }
     }
 
     [class^="col-"] {
@@ -35,8 +56,9 @@ $grid-spacing: 16px;
             margin-right: 0%;
         }
     }
+    
 }
-
+/*
 .col-1   { width:(100% / 12) - ($grid-spacing * 11 / 12); }
 .col-2   { width:(100% / 6) - ($grid-spacing * 10 / 12); }
 .col-3   { width:(100% / 4) - ($grid-spacing * 9 / 12); }
@@ -48,4 +70,4 @@ $grid-spacing: 16px;
 .col-9   { width:(100% / 1.333333333333333) - ($grid-spacing * 3 / 12); }
 .col-10  { width:(100% / 1.2) - ($grid-spacing * 2 / 12); }
 .col-11  { width:(100% / 1.090909090909091) - ($grid-spacing * 1 / 12); }
-.col-12  { width:100%; }
+.col-12  { width:100%; }*/
