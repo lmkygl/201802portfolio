@@ -24,6 +24,17 @@ $grid-spacing: 8px;
         text-align: center;
         color: #767779;
     }
+    .item3 {
+        color: #fff;
+        float: left;
+        width: (100%/3);
+        overflow: hidden;
+    }
+    .item6 {
+        float: left;
+        width: (100%/6);
+        overflow:hidden;
+    }
     .col-12 {
         .item {
             width: 100%;
