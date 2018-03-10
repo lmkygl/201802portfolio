@@ -1,40 +1,48 @@
 @import '../mixin/config.scss';
-$grid-spacing: 8px;
+@mixin grid-spacing($mt, $mr) {
+    .row {
+        margin-top: - $mt;
+        margin-right: - $mr;
+        .item-inner {
+            margin-top: $mt;
+            margin-right: $mr;
+        }
+    }
+}
+
 .grid {
-    // width: 900px;
+    $grid-spacing: 8px;
     width: 100%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
     background-color: gray;
-    @include mobile {
-        width: 100%;
-        overflow-x: hidden;
-    } // [class^="col-"] {
-    // }
     .item {
-        // padding: 10px;
-        //background: #e4e5e7;
         text-align: center;
         color: #767779;
         float: left;
-        // margin-right:$grid-spacing;
-        // margin-top:$grid-spacing;
-        // margin-right: $grid-spacing;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         &:last-child {
             margin-right: 0%;
         }
-        .item-inner{
+        .item-inner {
             padding: 5px;
             background-color: #e4e5e7;
-            margin-right:$grid-spacing;
-            margin-top:$grid-spacing;
         }
     }
+    .row {
+        display: block;
+        clear: both;
+        content: '';
+    }
+    @include grid-spacing($grid-spacing, $grid-spacing); 
+    // 그리드 확장
     
+    &.nospacing {
+        @include grid-spacing(0, 0);
+    }
     &.col-1 {
         .item {
             width: (100% /1);
@@ -95,11 +103,11 @@ $grid-spacing: 8px;
             width: (100%/12);
         }
     }
-    .row {
-        margin-top: -$grid-spacing;
-        margin-right: -$grid-spacing;
-        display: block;
-        clear: both;
-        content: '';
+    @include mobile {
+        width: 100%;
+        overflow-x: hidden;
+        .item {
+            width: 50% !important;
+        }
     }
 }
