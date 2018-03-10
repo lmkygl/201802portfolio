@@ -36,6 +36,31 @@
     }
     @include grid-spacing($grid-spacing, $grid-spacing); 
     
+
+    &.square {
+        .item-inner {
+            position: relative;
+            overflow: hidden;
+
+            &:after {
+                content: "";
+                display: block;
+                padding-bottom: 100%;
+                background-color:red;
+                
+            }
+            .box{
+                background: greenyellow;
+                position: absolute;
+                width : 100%;
+                height : 100%;
+                left:0;
+                top:0;
+            }
+        }
+    }
+
+
     // 그리드 확장
     &.nospacing {
         @include grid-spacing(0, 0);
