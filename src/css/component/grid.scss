@@ -1,94 +1,104 @@
 @import '../mixin/config.scss';
-$grid-spacing: 2%;
+$grid-spacing: 8px;
 .grid {
+    width: 900px;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     background-color: gray;
     @include mobile {
         width: 100%;
         overflow-x: hidden;
-    }
-    [class^="col-"] {
+    } // [class^="col-"] {
+    // }
+    .item {
+        // padding: 10px;
+        //background: #e4e5e7;
+        text-align: center;
+        color: #767779;
         float: left;
-        margin-right: $grid-spacing;
+        // margin-right:$grid-spacing;
+        // margin-top:$grid-spacing;
+        // margin-right: $grid-spacing;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         &:last-child {
             margin-right: 0%;
         }
+        .item-inner{
+            padding: 5px;
+            background-color: #e4e5e7;
+            margin-right:$grid-spacing;
+            margin-top:$grid-spacing;
+        }
     }
-    .item {
-        padding: 10px;
-        background: #e4e5e7;
-        text-align: center;
-        color: #767779;
+    
+    &.col-1 {
+        .item {
+            width: (100% /1);
+        }
     }
-    .item3 {
-        color: #fff;
-        float: left;
-        width: (100%/3);
-        overflow: hidden;
+    &.col-2 {
+        .item {
+            width: (100% / 2);
+        }
     }
-    .item6 {
-        float: left;
-        width: (100%/6);
-        overflow: hidden;
+    &.col-3 {
+        .item {
+            width: (100% / 3);
+        }
     }
-    .item12 {
-        float: left;
-        width: (100%/12);
-        overflow: hidden;
+    &.col-4 {
+        .item {
+            width: (100% / 4);
+        }
     }
-    .item2 {
-        float: left;
-        width: (100%/2);
-        overflow: hidden;
+    &.col-5 {
+        .item {
+            width: (100% / 5);
+        }
     }
-    .col-1 {
-        width: (100% / 12) - ($grid-spacing * 11 / 12);
+    &.col-6 {
+        .item {
+            width: (100% / 6);
+        }
     }
-    .col-2 {
-        width: (100% / 6) - ($grid-spacing * 10 / 12);
+    &.col-7 {
+        .item {
+            width: (100% / 7);
+        }
     }
-    .col-3 {
-        width: (100% / 4) - ($grid-spacing * 9 / 12);
-    }
-    .col-4 {
-        width: (100% / 3) - ($grid-spacing * 8 / 12);
-    }
-    .col-5 {
-        width: (100% / 2.4) - ($grid-spacing * 7 / 12);
-    }
-    .col-6 {
-        width: (100% / 2) - ($grid-spacing * 6 / 12);
-    }
-    .col-7 {
-        width: (100% / 1.714285714285714) - ($grid-spacing * 5 / 12);
-    }
-    .col-8 {
-        width: (100% / 1.5) - ($grid-spacing * 4 / 12);
+    &.col-8 {
+        .item {
+            width: (100% / 8);
+        }
     }
     .col-9 {
-        width: (100% / 1.333333333333333) - ($grid-spacing * 3 / 12);
+        .item {
+            width: (100% / 9);
+        }
     }
-    .col-10 {
-        width: (100% / 1.2) - ($grid-spacing * 2 / 12);
+    &.col-10 {
+        .item {
+            width: (100% / 10);
+        }
     }
-    .col-11 {
-        width: (100% / 1.090909090909091) - ($grid-spacing * 1 / 12);
+    &.col-11 {
+        .item {
+            width: (100% / 11);
+        }
     }
-    .col-12 {
-        width: 100%;
+    &.col-12 {
+        .item {
+            width: (100%/12);
+        }
     }
     .row {
-        width: 100%;
-        margin-top: $grid-spacing;
-        margin-bottom: $grid-spacing;
-        &.clearfix:after {
-            display: block;
-            clear: both;
-            content: '';
-        }
+        margin-top: -$grid-spacing;
+        margin-right: -$grid-spacing;
+        display: block;
+        clear: both;
+        content: '';
     }
 }
