@@ -12,8 +12,6 @@
 
 .grid {
     $grid-spacing: 8px;
-    width: 100%;
-    margin: 0 auto;
     position: relative;
     overflow: hidden;
     background-color: gray;
@@ -25,7 +23,6 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         .item-inner {
-            padding: 5px;
             background-color: #e4e5e7;
         }
     }
@@ -41,16 +38,17 @@
         .item-inner {
             position: relative;
             overflow: hidden;
+            // border-radius: 50%;
 
             &:after {
                 content: "";
                 display: block;
                 padding-bottom: 100%;
-                background-color:red;
+                background-color:rgb(33, 109, 105);
                 
             }
             .box{
-                background: greenyellow;
+                background: #fff;
                 position: absolute;
                 width : 100%;
                 height : 100%;
