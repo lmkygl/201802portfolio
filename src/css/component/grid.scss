@@ -10,7 +10,27 @@
     }
 }
 
+// 목표 api
+@mixin box-sizing($x, $y) {
+
+}
+
+// .square {
+//     @include box-sizing(1,1);
+// }
+
+// .rectangle3-2 {
+//     @include box-sizing(3,2);
+// }
+
+// .grid.squre {
+//     .item-inner {
+//         @include box-sizing(16, 9);
+//     }
+// }
+
 .grid {
+    width: 500px;
     $grid-spacing: 8px;
     position: relative;
     overflow: hidden;
@@ -123,6 +143,14 @@
             width: (100%/12);
         }
     }
+    @include tablet{
+        width: 100%;
+        overflow-x: hidden;
+        .item {
+            width: (100%/5) !important;
+            background-color: darkkhaki;
+        }
+    }
     @include mobile {
         width: 100%;
         overflow-x: hidden;
@@ -131,3 +159,4 @@
         }
     }
 }
+
