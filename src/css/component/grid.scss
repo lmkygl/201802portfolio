@@ -12,31 +12,23 @@
 
 // 목표 api
 @mixin box-sizing($x, $y) {
-    .square {
-        .item-inner {
-            .box{
-                width : $x;
-                height : $y;
-            }
-        }
+    .box {
+        width: $x;
+        height: $y;
     }
-
 }
 
 // .square {
 //     @include box-sizing(1,1);
 // }
-
 // .grid.rectangle3-2 {
 //     @include box-sizing(3,2);
 // }
-
 // .grid.squre {
 //     .item-inner {
 //         @include box-sizing(16, 9);
 //     }
 // }
-
 .grid {
     width: 800px;
     $grid-spacing: 8px;
@@ -59,62 +51,46 @@
         clear: both;
         content: '';
     }
-    @include grid-spacing($grid-spacing, $grid-spacing); 
-    
-
+    @include grid-spacing($grid-spacing, $grid-spacing);
     &.square {
         .item-inner {
             position: relative;
-            overflow: hidden;
-            // border-radius: 50%;
-
+            overflow: hidden; // border-radius: 50%;
             &:after {
                 content: "";
                 display: block;
                 padding-bottom: 100%;
-                background-color:rgb(33, 109, 105);
-                
+                background-color: rgb(33, 109, 105);
             }
-            .box{
+            .box {
                 background: #fff;
                 position: absolute;
-                width : 100%;
-                height : 100%;
-                left:0;
-                top:0;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
             }
         }
     }
-
-
     &.rectangle3-2 {
         .item-inner {
             position: relative;
-            overflow: hidden;
-            // border-radius: 50%;
-
+            overflow: hidden; // border-radius: 50%;
             &:after {
                 content: "";
                 display: block;
                 padding-bottom: 100%;
-                background-color:rgb(33, 109, 105);
-                
+                background-color: rgb(33, 109, 105);
             }
-            .box{
+            .box {
                 background: #fff;
                 position: absolute;
-                left:0;
-                top:0;
+                left: 0;
+                top: 0;
             }
+            @include box-sizing(3, 2);
         }
-        @include box-sizing(3,2);
-    }
-    
-    .grid.squre {
-        .item-inner {
-            @include box-sizing(16, 9);
-        }
-    }
+    } 
     // 그리드 확장
     &.nospacing {
         @include grid-spacing(0, 0);
@@ -179,7 +155,7 @@
             width: (100%/12);
         }
     }
-    @include tablet{
+    @include tablet {
         width: 100%;
         overflow-x: hidden;
         .item {
@@ -194,7 +170,5 @@
         .item {
             width: 50% !important;
         }
-        
     }
 }
-
