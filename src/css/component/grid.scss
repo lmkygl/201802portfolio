@@ -12,12 +12,9 @@
 
 // 목표 api
 @mixin box-sizing($x, $y) {
-    
-    $y : (100%/$x)*$y;
-
+    $y: (100%/$x)*$y;
     .item-inner {
-        position: relative;
-        overflow: hidden; // border-radius: 50%;
+         // border-radius: 50%;
         &:after {
             content: "";
             display: block;
@@ -30,16 +27,27 @@
             left: 0;
             top: 0;
             width: 100%;
-            height :100%;
+            height: 100%;
         }
     }
 }
 
+.multiline {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+    text-overflow: ellipsis;
+}
+.margin{
+    margin-top: 50px;
+    padding: 30px;
+}
+.inner-box{
+    height:20px;
+}
 
-
-// .square {
-//     @include box-sizing(1,1);
-// }
 // .grid.rectangle3-2 {
 //     @include box-sizing(3,2);
 // }
@@ -49,20 +57,20 @@
 //     }
 // }
 .grid {
-   // width: 800px;
+    // width: 800px;
     $grid-spacing: 8px;
     position: relative;
-    overflow: hidden;
-    // background-color: #efefef;
+    overflow: hidden; // background-color: #efefef;
     .item {
-        text-align: center;
-       // color: #767779;
+        text-align: center; // color: #767779;
         float: left;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         .item-inner {
             background-color: rgb(246, 219, 248);
+            position: relative;
+            overflow: hidden;
         }
     }
     .row {
@@ -72,10 +80,10 @@
     }
     @include grid-spacing($grid-spacing, $grid-spacing);
     &.square {
-        @include box-sizing(1,1);
+        @include box-sizing(1, 1);
     }
     &.rectangle3-2 {
-        @include boxing(3, 2);
+        @include box-sizing(3, 2);
     } 
     // 그리드 확장
     &.nospacing {
@@ -147,9 +155,7 @@
         .item {
             width: (100%/3) !important;
             background-color: darkkhaki;
-        }
-        
-        // @include box-sizing(3, 2);
+        } // @include box-sizing(3, 2);
     }
     @include mobile {
         width: 100%;
@@ -157,6 +163,5 @@
         .item {
             width: 50% !important;
         }
-        
     }
 }
