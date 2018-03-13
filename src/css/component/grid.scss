@@ -13,6 +13,26 @@
 // 목표 api
 @mixin box-sizing($x, $y) {
     
+    $y : (100%/$x)*$y;
+
+    .item-inner {
+        position: relative;
+        overflow: hidden; // border-radius: 50%;
+        &:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+            background-color: rgb(33, 109, 105);
+        }
+        .box {
+            background-color: rgb(226, 230, 177);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height : $y;
+        }
+    }
 }
 
 // .square {
@@ -80,15 +100,14 @@
                 background-color: rgb(33, 109, 105);
             }
             .box {
-                background: #fff;
+                background-color: rgb(226, 230, 177);
                 position: absolute;
                 left: 0;
                 top: 0;
-                width: 100%;
-                height: 50%;
             }
-           // @include box-sizing(3, 2);
         }
+        @include box-sizing(3, 2);
+        
     } 
     // 그리드 확장
     &.nospacing {
@@ -161,7 +180,7 @@
             width: (100%/3) !important;
             background-color: darkkhaki;
         }
-        @include box-sizing(16%, 9%);
+        @include box-sizing(16, 9);
     }
     @include mobile {
         width: 100%;
