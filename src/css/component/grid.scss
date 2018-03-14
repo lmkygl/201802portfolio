@@ -1,13 +1,5 @@
 @import '../mixin/config.scss';
 @mixin grid-spacing($mt, $mr) {
-    .row {
-        margin-top: - $mt;
-        margin-right: - $mr;
-        .item-inner {
-            margin-top: $mt;
-            margin-right: $mr;
-        }
-    }
     .grid__row {
         margin-top: - $mt;
         margin-right: - $mr;
@@ -21,6 +13,7 @@
 // 목표 api
 @mixin box-sizing($x, $y) {
     $y: (100%/$x)*$y;
+
     .grid_inner_item {
          // border-radius: 50%;
         &:after {
@@ -48,13 +41,6 @@
     line-height: 20px;
     text-overflow: ellipsis;
 }
-.margin{
-    margin-top: 50px;
-    padding: 30px;
-}
-.inner-box{
-    height:20px;
-}
 
 // .grid.rectangle3-2 {
 //     @include box-sizing(3,2);
@@ -65,17 +51,15 @@
 //     }
 // }
 .grid {
-    // width: 800px;
     $grid-spacing: 8px;
     position: relative;
-    overflow: hidden; // background-color: #efefef;
+    overflow: hidden;
     .grid__row {
         display: block;
         clear: both;
         content: '';
     }
     .grid__inner {
-        text-align: center; // color: #767779;
         float: left;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -164,7 +148,7 @@
         .grid__inner {
             width: (100%/3) !important;
             background-color: darkkhaki;
-        } // @include box-sizing(3, 2);
+        }
     }
     @include mobile {
         width: 100%;
