@@ -13,12 +13,11 @@
 // box sizing 비율 
 @mixin box-sizing($x, $y) {
     $y: (100%/$x)*$y;
-
-    &::after{
+    &::after {
         content: "";
         display: block;
         padding-bottom: $y;
-        background-color: rgb(33,203,50); 
+        background-color: rgb(33, 203, 50);
     }
     .img__box {
         background-color: rgb(224, 224, 224);
@@ -30,32 +29,18 @@
     }
 }
 
-.multiline {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    line-height: 20px;
-    text-overflow: ellipsis;
-}
-
 .square {
     @include box-sizing(1, 1);
 }
+
 .rectangle3-2 {
     @include box-sizing(3, 2);
 }
+
 .ractangle16-9 {
     @include box-sizing(16, 9);
 }
-// .grid.rectangle3-2 {
-//     @include box-sizing(3,2);
-// }
-// .grid.squre {
-//     .item-inner {
-//         @include box-sizing(16, 9);
-//     }
-// }
+
 .grid {
     $grid-spacing: 8px;
     position: relative;
@@ -74,18 +59,10 @@
             background-color: rgb(246, 219, 248);
             position: relative;
             overflow: hidden;
-            
         }
     }
-   
-    @include grid-spacing($grid-spacing, $grid-spacing);
-
-    // &.square {
-    //     @include box-sizing(1, 1);
-    // }
-    // &.rectangle3-2 {
-    //     @include box-sizing(3, 2);
-    // } 
+    @include grid-spacing($grid-spacing, $grid-spacing); 
+    
     // 그리드 확장
     &.nospacing {
         @include grid-spacing(0, 0);
@@ -166,3 +143,12 @@
         }
     }
 }
+
+// .multiline {
+//     overflow: hidden;
+//     display: -webkit-box;
+//     -webkit-line-clamp: 3;
+//     -webkit-box-orient: vertical;
+//     line-height: 20px;
+//     text-overflow: ellipsis;
+// }
