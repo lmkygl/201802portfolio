@@ -10,37 +10,6 @@
     }
 }
 
-// box sizing 비율 
-@mixin box-sizing($x, $y) {
-    $y: (100%/$x)*$y;
-    &::after {
-        content: "";
-        display: block;
-        padding-bottom: $y;
-        background-color: rgb(33, 203, 50);
-    }
-    .img__box {
-        background-color: rgb(224, 224, 224);
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.square {
-    @include box-sizing(1, 1);
-}
-
-.rectangle3-2 {
-    @include box-sizing(3, 2);
-}
-
-.ractangle16-9 {
-    @include box-sizing(16, 9);
-}
-
 .grid {
     $grid-spacing: 8px;
     position: relative;

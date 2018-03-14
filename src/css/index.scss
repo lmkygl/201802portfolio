@@ -1,7 +1,9 @@
 @import './mixin/config.scss';
 @import './module/reset.scss';
+@import './module/grid.scss';
+@import './module/util.scss';
 
 // layout
 @import './component/layout.scss';
-@import './component/grid.scss';
+
 
