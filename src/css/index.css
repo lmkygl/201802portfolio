@@ -103,6 +103,48 @@ h2 {
   line-height: 20px;
   text-overflow: ellipsis; }
 
+.square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  background-color: #21cb32; }
+
+.square .img__box {
+  background-color: #e0e0e0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.rectangle3-2::after {
+  content: "";
+  display: block;
+  padding-bottom: 66.66667%;
+  background-color: #21cb32; }
+
+.rectangle3-2 .img__box {
+  background-color: #e0e0e0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.ractangle16-9::after {
+  content: "";
+  display: block;
+  padding-bottom: 56.25%;
+  background-color: #21cb32; }
+
+.ractangle16-9 .img__box {
+  background-color: #e0e0e0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
 .grid {
   position: relative;
   overflow: hidden; }
@@ -115,35 +157,20 @@ h2 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    .grid .grid__inner .square {
-      position: relative;
-      overflow: hidden; }
-      .grid .grid__inner .square::after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
-        background-color: #21cb32; }
-      .grid .grid__inner .square .img__box {
-        background-color: #e2e6b1;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%; }
-    .grid .grid__inner .grid_inner_item {
+    .grid .grid__inner .grid__inner__item {
       background-color: #f6dbf8;
       position: relative;
       overflow: hidden; }
   .grid .grid__row {
     margin-top: -8px;
     margin-right: -8px; }
-    .grid .grid__row .grid_inner_item {
+    .grid .grid__row .grid__inner__item {
       margin-top: 8px;
       margin-right: 8px; }
   .grid.nospacing .grid__row {
     margin-top: 0;
     margin-right: 0; }
-    .grid.nospacing .grid__row .grid_inner_item {
+    .grid.nospacing .grid__row .grid__inner__item {
       margin-top: 0;
       margin-right: 0; }
   .grid.col-1 .grid__inner {

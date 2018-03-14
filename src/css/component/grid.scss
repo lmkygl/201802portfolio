@@ -3,7 +3,7 @@
     .grid__row {
         margin-top: - $mt;
         margin-right: - $mr;
-        .grid_inner_item {
+        .grid__inner__item {
             margin-top: $mt;
             margin-right: $mr;
         }
@@ -14,43 +14,19 @@
 @mixin box-sizing($x, $y) {
     $y: (100%/$x)*$y;
 
-    // .grid_inner_item {
-    //      // border-radius: 50%;
-    //     &:after {
-    //         content: "";
-    //         display: block;
-    //         padding-bottom: $y;
-    //         background-color: rgb(33, 109, 105);
-    //     }
-    //     .box {
-    //         background-color: rgb(226, 230, 177);
-    //         position: absolute;
-    //         left: 0;
-    //         top: 0;
-    //         width: 100%;
-    //         height: 100%;
-    //     }
-    // }
-
-
-
-    .square {
-        position: relative;
-        overflow: hidden;
-        &::after{
-            content: "";
-            display: block;
-            padding-bottom: $y;
-            background-color: rgb(33,203,50); 
-        }
-        .img__box {
-            background-color: rgb(226, 230, 177);
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-        }
+    &::after{
+        content: "";
+        display: block;
+        padding-bottom: $y;
+        background-color: rgb(33,203,50); 
+    }
+    .img__box {
+        background-color: rgb(224, 224, 224);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -63,8 +39,14 @@
     text-overflow: ellipsis;
 }
 
-.square{
-    
+.square {
+    @include box-sizing(1, 1);
+}
+.rectangle3-2 {
+    @include box-sizing(3, 2);
+}
+.ractangle16-9 {
+    @include box-sizing(16, 9);
 }
 // .grid.rectangle3-2 {
 //     @include box-sizing(3,2);
@@ -88,8 +70,7 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        @include box-sizing(1, 1);`
-        .grid_inner_item {
+        .grid__inner__item {
             background-color: rgb(246, 219, 248);
             position: relative;
             overflow: hidden;
