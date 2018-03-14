@@ -113,6 +113,10 @@ h2 {
 .grid {
   position: relative;
   overflow: hidden; }
+  .grid .grid__inner {
+    display: block;
+    clear: both;
+    content: ''; }
   .grid .item {
     text-align: center;
     float: left;
@@ -123,14 +127,10 @@ h2 {
       background-color: #f6dbf8;
       position: relative;
       overflow: hidden; }
-  .grid .row {
-    display: block;
-    clear: both;
-    content: ''; }
-  .grid .row {
+  .grid .grid__inner {
     margin-top: -8px;
     margin-right: -8px; }
-    .grid .row .item-inner {
+    .grid .grid__inner .item-inner {
       margin-top: 8px;
       margin-right: 8px; }
   .grid.square .item-inner:after {
@@ -157,10 +157,10 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%; }
-  .grid.nospacing .row {
+  .grid.nospacing .grid__inner {
     margin-top: 0;
     margin-right: 0; }
-    .grid.nospacing .row .item-inner {
+    .grid.nospacing .grid__inner .item-inner {
       margin-top: 0;
       margin-right: 0; }
   .grid.col-1 .item {

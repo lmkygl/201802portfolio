@@ -1,6 +1,6 @@
 @import '../mixin/config.scss';
 @mixin grid-spacing($mt, $mr) {
-    .row {
+    .grid__inner {
         margin-top: - $mt;
         margin-right: - $mr;
         .item-inner {
@@ -61,6 +61,11 @@
     $grid-spacing: 8px;
     position: relative;
     overflow: hidden; // background-color: #efefef;
+    .grid__inner {
+        display: block;
+        clear: both;
+        content: '';
+    }
     .item {
         text-align: center; // color: #767779;
         float: left;
@@ -73,11 +78,7 @@
             overflow: hidden;
         }
     }
-    .row {
-        display: block;
-        clear: both;
-        content: '';
-    }
+   
     @include grid-spacing($grid-spacing, $grid-spacing);
     &.square {
         @include box-sizing(1, 1);
