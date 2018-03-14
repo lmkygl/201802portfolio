@@ -1,9 +1,17 @@
 @import '../mixin/config.scss';
 @mixin grid-spacing($mt, $mr) {
-    .grid__inner {
+    .row {
         margin-top: - $mt;
         margin-right: - $mr;
         .item-inner {
+            margin-top: $mt;
+            margin-right: $mr;
+        }
+    }
+    .grid__inner {
+        margin-top: - $mt;
+        margin-right: - $mr;
+        .grid__inner__item__cell {
             margin-top: $mt;
             margin-right: $mr;
         }
@@ -91,7 +99,7 @@
         @include grid-spacing(0, 0);
     }
     &.col-1 {
-        .item {
+        .gird__inner__item {
             width: (100% /1);
         }
     }

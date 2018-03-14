@@ -127,10 +127,16 @@ h2 {
       background-color: #f6dbf8;
       position: relative;
       overflow: hidden; }
+  .grid .row {
+    margin-top: -8px;
+    margin-right: -8px; }
+    .grid .row .item-inner {
+      margin-top: 8px;
+      margin-right: 8px; }
   .grid .grid__inner {
     margin-top: -8px;
     margin-right: -8px; }
-    .grid .grid__inner .item-inner {
+    .grid .grid__inner .grid__inner__item__cell {
       margin-top: 8px;
       margin-right: 8px; }
   .grid.square .item-inner:after {
@@ -157,13 +163,19 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%; }
+  .grid.nospacing .row {
+    margin-top: 0;
+    margin-right: 0; }
+    .grid.nospacing .row .item-inner {
+      margin-top: 0;
+      margin-right: 0; }
   .grid.nospacing .grid__inner {
     margin-top: 0;
     margin-right: 0; }
-    .grid.nospacing .grid__inner .item-inner {
+    .grid.nospacing .grid__inner .grid__inner__item__cell {
       margin-top: 0;
       margin-right: 0; }
-  .grid.col-1 .item {
+  .grid.col-1 .gird__inner__item {
     width: 100%; }
   .grid.col-2 .item {
     width: 50%; }
