@@ -10,7 +10,7 @@
     }
 }
 
-// 목표 api
+// box sizing 비율 
 @mixin box-sizing($x, $y) {
     $y: (100%/$x)*$y;
 
