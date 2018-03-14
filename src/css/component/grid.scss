@@ -8,10 +8,10 @@
             margin-right: $mr;
         }
     }
-    .grid__inner {
+    .grid__row {
         margin-top: - $mt;
         margin-right: - $mr;
-        .grid__inner__item__cell {
+        .grid_inner_item {
             margin-top: $mt;
             margin-right: $mr;
         }
@@ -21,7 +21,7 @@
 // 목표 api
 @mixin box-sizing($x, $y) {
     $y: (100%/$x)*$y;
-    .item-inner {
+    .grid_inner_item {
          // border-radius: 50%;
         &:after {
             content: "";
@@ -69,18 +69,18 @@
     $grid-spacing: 8px;
     position: relative;
     overflow: hidden; // background-color: #efefef;
-    .grid__inner {
+    .grid__row {
         display: block;
         clear: both;
         content: '';
     }
-    .item {
+    .grid__inner {
         text-align: center; // color: #767779;
         float: left;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        .item-inner {
+        .grid_inner_item {
             background-color: rgb(246, 219, 248);
             position: relative;
             overflow: hidden;
@@ -99,69 +99,69 @@
         @include grid-spacing(0, 0);
     }
     &.col-1 {
-        .gird__inner__item {
+        .grid__inner {
             width: (100% /1);
         }
     }
     &.col-2 {
-        .item {
+        .grid__inner {
             width: (100% / 2);
         }
     }
     &.col-3 {
-        .item {
+        .grid__inner {
             width: (100% / 3);
         }
     }
     &.col-4 {
-        .item {
+        .grid__inner {
             width: (100% / 4);
         }
     }
     &.col-5 {
-        .item {
+        .grid__inner {
             width: (100% / 5);
         }
     }
     &.col-6 {
-        .item {
+        .grid__inner {
             width: (100% / 6);
         }
     }
     &.col-7 {
-        .item {
+        .grid__inner {
             width: (100% / 7);
         }
     }
     &.col-8 {
-        .item {
+        .grid__inner {
             width: (100% / 8);
         }
     }
     .col-9 {
-        .item {
+        .grid__inner {
             width: (100% / 9);
         }
     }
     &.col-10 {
-        .item {
+        .grid__inner {
             width: (100% / 10);
         }
     }
     &.col-11 {
-        .item {
+        .grid__inner {
             width: (100% / 11);
         }
     }
     &.col-12 {
-        .item {
+        .grid__inner {
             width: (100%/12);
         }
     }
     @include tablet {
         width: 100%;
         overflow-x: hidden;
-        .item {
+        .grid__inner {
             width: (100%/3) !important;
             background-color: darkkhaki;
         } // @include box-sizing(3, 2);
@@ -169,7 +169,7 @@
     @include mobile {
         width: 100%;
         overflow-x: hidden;
-        .item {
+        .grid__inner {
             width: 50% !important;
         }
     }

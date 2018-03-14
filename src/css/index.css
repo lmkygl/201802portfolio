@@ -113,17 +113,17 @@ h2 {
 .grid {
   position: relative;
   overflow: hidden; }
-  .grid .grid__inner {
+  .grid .grid__row {
     display: block;
     clear: both;
     content: ''; }
-  .grid .item {
+  .grid .grid__inner {
     text-align: center;
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    .grid .item .item-inner {
+    .grid .grid__inner .grid_inner_item {
       background-color: #f6dbf8;
       position: relative;
       overflow: hidden; }
@@ -133,30 +133,30 @@ h2 {
     .grid .row .item-inner {
       margin-top: 8px;
       margin-right: 8px; }
-  .grid .grid__inner {
+  .grid .grid__row {
     margin-top: -8px;
     margin-right: -8px; }
-    .grid .grid__inner .grid__inner__item__cell {
+    .grid .grid__row .grid_inner_item {
       margin-top: 8px;
       margin-right: 8px; }
-  .grid.square .item-inner:after {
+  .grid.square .grid_inner_item:after {
     content: "";
     display: block;
     padding-bottom: 100%;
     background-color: #216d69; }
-  .grid.square .item-inner .box {
+  .grid.square .grid_inner_item .box {
     background-color: #e2e6b1;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%; }
-  .grid.rectangle3-2 .item-inner:after {
+  .grid.rectangle3-2 .grid_inner_item:after {
     content: "";
     display: block;
     padding-bottom: 66.66667%;
     background-color: #216d69; }
-  .grid.rectangle3-2 .item-inner .box {
+  .grid.rectangle3-2 .grid_inner_item .box {
     background-color: #e2e6b1;
     position: absolute;
     left: 0;
@@ -169,48 +169,48 @@ h2 {
     .grid.nospacing .row .item-inner {
       margin-top: 0;
       margin-right: 0; }
-  .grid.nospacing .grid__inner {
+  .grid.nospacing .grid__row {
     margin-top: 0;
     margin-right: 0; }
-    .grid.nospacing .grid__inner .grid__inner__item__cell {
+    .grid.nospacing .grid__row .grid_inner_item {
       margin-top: 0;
       margin-right: 0; }
-  .grid.col-1 .gird__inner__item {
+  .grid.col-1 .grid__inner {
     width: 100%; }
-  .grid.col-2 .item {
+  .grid.col-2 .grid__inner {
     width: 50%; }
-  .grid.col-3 .item {
+  .grid.col-3 .grid__inner {
     width: 33.33333%; }
-  .grid.col-4 .item {
+  .grid.col-4 .grid__inner {
     width: 25%; }
-  .grid.col-5 .item {
+  .grid.col-5 .grid__inner {
     width: 20%; }
-  .grid.col-6 .item {
+  .grid.col-6 .grid__inner {
     width: 16.66667%; }
-  .grid.col-7 .item {
+  .grid.col-7 .grid__inner {
     width: 14.28571%; }
-  .grid.col-8 .item {
+  .grid.col-8 .grid__inner {
     width: 12.5%; }
-  .grid .col-9 .item {
+  .grid .col-9 .grid__inner {
     width: 11.11111%; }
-  .grid.col-10 .item {
+  .grid.col-10 .grid__inner {
     width: 10%; }
-  .grid.col-11 .item {
+  .grid.col-11 .grid__inner {
     width: 9.09091%; }
-  .grid.col-12 .item {
+  .grid.col-12 .grid__inner {
     width: 8.33333%; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .grid {
       width: 100%;
       overflow-x: hidden; }
-      .grid .item {
+      .grid .grid__inner {
         width: 33.33333% !important;
         background-color: darkkhaki; } }
   @media (max-width: 767px) {
     .grid {
       width: 100%;
       overflow-x: hidden; }
-      .grid .item {
+      .grid .grid__inner {
         width: 50% !important; } }
 
 /*# sourceMappingURL=index.css.map */
