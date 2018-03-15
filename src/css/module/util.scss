@@ -29,3 +29,17 @@
 .ractangle16-9 {
     @include box-sizing(16, 9);
 }
+
+// 말줄임표 
+@mixin multiline($fz,$h,$lh){
+
+}
+
+// .multiline {
+//     overflow: hidden;
+//     display: -webkit-box;
+//     -webkit-line-clamp: 3;
+//     -webkit-box-orient: vertical;
+//     line-height: 20px;
+//     text-overflow: ellipsis;
+// }
