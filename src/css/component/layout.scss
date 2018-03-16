@@ -1,13 +1,15 @@
 @import '../mixin/config.scss';
 .container-width {
-    width : $max-width;
+    width: $max-width;
     margin: 50px auto;
 }
-h2{
+
+h2 {
     color: $font-color;
     font-size: 30px;
     padding: 5px 0;
 }
+
 .title {
     display: -webkit-box;
     overflow: hidden;
@@ -18,4 +20,19 @@ h2{
     font-weight: 400;
     font-size: 34px;
     line-height: 48px;
+    width: 200px;
+}
+
+.line__box {
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal !important;
+    display: block;
+    height:30px;
+    line-height: 30px;
+}
+.multiline__box{
+    @include multiline(16px, 40px, 20px) ;
 }
