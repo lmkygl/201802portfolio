@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+a {
+    color: #425866;
+    text-decoration: none;
+    font-size:15px;
+}
+em{
+    font-style: normal;
+}
+
+h2 {
+    color: $font-color;
+    font-size: 30px;
+    padding: 5px 0;
+}
+
+.title {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 48px; //width: 200px;
+}
