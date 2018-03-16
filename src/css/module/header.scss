@@ -1,0 +1,18 @@
+@import '../mixin/config.scss';
+ .navi{
+     background-color: #ccc;
+
+     .product__btn {
+         float: left;
+         width: 20%;
+     }
+     .logo {
+         float: left;
+         width : 50%;
+     }
+     .menubtn__wrap{
+         float: right;
+         width: 30%;
+     }
+     
+ }
