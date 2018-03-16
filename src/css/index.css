@@ -193,9 +193,12 @@ table {
   };
 }
 */
-.container-width {
+.container__width {
   width: 1200px;
-  margin: 50px auto; }
+  margin: 10px auto; }
+
+.full__width {
+  width: 100%; }
 
 h2 {
   color: #0D364C;
@@ -211,8 +214,7 @@ h2 {
   margin-top: 6px;
   font-weight: 400;
   font-size: 34px;
-  line-height: 48px;
-  width: 200px; }
+  line-height: 48px; }
 
 .line__box {
   text-overflow: ellipsis;
