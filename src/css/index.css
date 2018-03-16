@@ -193,7 +193,7 @@ table {
   };
 }
 */
-.container__width {
+.max__width {
   width: 1200px;
   margin: 10px auto; }
 
