@@ -374,7 +374,10 @@ button:hover {
 
 .square__box {
   width: 45%;
-  position: absolute; }
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: gray; }
   .square__box::after {
     content: "";
     display: block;
