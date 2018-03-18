@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 /**
 .selector {
   @include tablet {
@@ -12,7 +13,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -194,6 +194,12 @@ table {
   };
 }
 */
+body, html {
+  color: #0D364C;
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif; }
+
 a {
   color: #425866;
   text-decoration: none;
@@ -249,86 +255,73 @@ button:hover {
   };
 }
 */
-.navi {
-  height: 50px;
+.header {
+  height: 90px;
+  background-color: #ccc;
   position: relative;
-  overflow: hidden;
-  background-color: #ccc; }
-  .navi .product__btn {
-    float: left;
-    width: 20%;
-    overflow: hidden;
+  overflow: hidden; }
+  .header .menu__btn__area {
+    width: 5%;
+    height: 90px;
     position: relative;
-    background-color: lightcoral; }
-  .navi .logo {
     float: left;
-    width: 60%;
     overflow: hidden;
-    background-color: greenyellow;
-    text-align: right; }
-  .navi .menubtn__wrap {
-    float: right;
-    overflow: hidden;
-    width: 20%;
-    background: lightskyblue;
-    z-index: 3; }
-    .navi .menubtn__wrap .m_hamburger {
+    background-color: green; }
+    .header .menu__btn__area span {
       display: block;
-      position: relative;
-      overflow: hidden;
-      border: none;
-      background: none;
-      width: 32px;
-      height: 32px;
-      cursor: pointer; }
-      .navi .menubtn__wrap .m_hamburger span {
-        display: block;
-        position: absolute;
-        margin: auto;
-        top: 15px;
-        left: 0;
-        right: 0;
-        height: 2px;
-        width: 32px;
-        background-color: #fffdeb;
-        transition: background .2s ease-in-out; }
-      .navi .menubtn__wrap .m_hamburger span::before {
-        position: absolute;
-        display: block;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #fffdeb;
-        content: "";
-        top: -12px;
-        transition-duration: .3s, .3s;
-        transition-delay: 0s, 0s;
-        transition-property: top, transform, -webkit-transform; }
-      .navi .menubtn__wrap .m_hamburger span::after {
-        position: absolute;
-        display: block;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #fffdeb;
-        content: "";
-        bottom: -12px;
-        transition-property: bottom, transform, -webkit-transform;
-        transition-duration: .3s, .3s;
-        transition-delay: 0s, 0s; }
-    .navi .menubtn__wrap .menu__btn__item {
-      width: 80%;
-      height: 50px;
       position: absolute;
+      margin: auto;
+      top: 15px;
+      left: 0;
       right: 0;
-      top: 0;
-      display: none;
-      background-color: bisque; }
-      .navi .menubtn__wrap .menu__btn__item .menu__btn__item_list {
+      height: 2px;
+      width: 32px;
+      background-color: #bdbdbd;
+      transition: background .2s ease-in-out; }
+    .header .menu__btn__area span::before {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #bdbdbd;
+      content: "";
+      top: -12px;
+      transition-duration: .3s, .3s;
+      transition-delay: 0s, 0s;
+      transition-property: top, transform, -webkit-transform; }
+    .header .menu__btn__area span::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #bdbdbd;
+      content: "";
+      bottom: -12px;
+      transition-property: bottom, transform, -webkit-transform;
+      transition-duration: .3s, .3s;
+      transition-delay: 0s, 0s; }
+  .header .menu__item__area {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .header .menu__item__area ul {
+      width: 100%;
+      height: 100%; }
+      .header .menu__item__area ul .menu__btn__item_list {
         display: inline-block;
-        width: 16%;
-        text-align: center;
-        line-height: 50px; }
+        height: 100%; }
+  .header .logo {
+    width: 95%;
+    height: 90px;
+    line-height: 90px;
+    float: left;
+    overflow: hidden;
+    text-align: right; }
+    .header .logo img {
+      margin-right: 20px; }
 
 /**
 .selector {
