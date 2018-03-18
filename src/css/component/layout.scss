@@ -23,3 +23,9 @@
 .multiline__box {
     @include multiline(16px, 40px, 20px);
 }
+
+.square__box{
+    width: 45%;
+    position: absolute;
+    @include box-sizing(1, 1);
+}

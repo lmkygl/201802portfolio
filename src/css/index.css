@@ -317,7 +317,8 @@ button:hover {
     .header .menu__item__area ul {
       width: 100%;
       height: 100%;
-      background-color: #fff; }
+      background-color: #fff;
+      display: none; }
       .header .menu__item__area ul .menu__btn__item_list {
         width: 16%;
         float: left;
@@ -370,5 +371,21 @@ button:hover {
   line-height: 20px;
   font-size: 16px;
   height: 40px; }
+
+.square__box {
+  width: 45%;
+  position: absolute; }
+  .square__box::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    background-color: #21cb32; }
+  .square__box .img__box {
+    background-color: #e0e0e0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=index.css.map */
