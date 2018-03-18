@@ -250,16 +250,85 @@ button:hover {
 }
 */
 .navi {
+  height: 50px;
+  position: relative;
+  overflow: hidden;
   background-color: #ccc; }
   .navi .product__btn {
     float: left;
-    width: 20%; }
+    width: 20%;
+    overflow: hidden;
+    position: relative;
+    background-color: lightcoral; }
   .navi .logo {
     float: left;
-    width: 50%; }
+    width: 60%;
+    overflow: hidden;
+    background-color: greenyellow;
+    text-align: right; }
   .navi .menubtn__wrap {
     float: right;
-    width: 30%; }
+    overflow: hidden;
+    width: 20%;
+    background: lightskyblue;
+    z-index: 3; }
+    .navi .menubtn__wrap .m_hamburger {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border: none;
+      background: none;
+      width: 32px;
+      height: 32px;
+      cursor: pointer; }
+      .navi .menubtn__wrap .m_hamburger span {
+        display: block;
+        position: absolute;
+        margin: auto;
+        top: 15px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        width: 32px;
+        background-color: #fffdeb;
+        transition: background .2s ease-in-out; }
+      .navi .menubtn__wrap .m_hamburger span::before {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fffdeb;
+        content: "";
+        top: -12px;
+        transition-duration: .3s, .3s;
+        transition-delay: 0s, 0s;
+        transition-property: top, transform, -webkit-transform; }
+      .navi .menubtn__wrap .m_hamburger span::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fffdeb;
+        content: "";
+        bottom: -12px;
+        transition-property: bottom, transform, -webkit-transform;
+        transition-duration: .3s, .3s;
+        transition-delay: 0s, 0s; }
+    .navi .menubtn__wrap .menu__btn__item {
+      width: 80%;
+      height: 50px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: none;
+      background-color: bisque; }
+      .navi .menubtn__wrap .menu__btn__item .menu__btn__item_list {
+        display: inline-block;
+        width: 16%;
+        text-align: center;
+        line-height: 50px; }
 
 /**
 .selector {

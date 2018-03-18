@@ -1,18 +1,92 @@
 @import '../mixin/config.scss';
- .navi{
-     background-color: #ccc;
-
-     .product__btn {
-         float: left;
-         width: 20%;
-     }
-     .logo {
-         float: left;
-         width : 50%;
-     }
-     .menubtn__wrap{
-         float: right;
-         width: 30%;
-     }
-     
- }
+.navi {
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ccc;
+    .product__btn {
+        float: left;
+        width: 20%;
+        overflow: hidden;
+        position: relative;
+        background-color: lightcoral;
+    }
+    .logo {
+        float: left;
+        width: 60%;
+        overflow: hidden;
+        background-color: greenyellow;
+        text-align: right;
+    }
+    .menubtn__wrap {
+        float: right;
+        overflow: hidden;
+        width: 20%;
+       // position: relative;
+        background: lightskyblue;
+        z-index: 3;
+        .m_hamburger {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            background: none;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            span {
+                display: block;
+                position: absolute;
+                margin: auto;
+                top: 15px;
+                left: 0;
+                right: 0;
+                height: 2px;
+                width: 32px;
+                background-color: #fffdeb;
+                transition: background .2s ease-in-out;
+            }
+            span::before {
+                position: absolute;
+                display: block;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #fffdeb;
+                content: "";
+                top: -12px;
+                transition-duration: .3s, .3s;
+                transition-delay: 0s, 0s;
+                transition-property: top, transform, -webkit-transform;
+            }
+            span::after {
+                position: absolute;
+                display: block;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #fffdeb;
+                content: "";
+                bottom: -12px;
+                transition-property: bottom, transform, -webkit-transform;
+                transition-duration: .3s, .3s;
+                transition-delay: 0s, 0s;
+            }
+        }
+        .menu__btn__item{
+            width: 80%;
+            height: 50px;
+            position: absolute;
+            right: 0;
+            top: 0;
+             display:none;
+            background-color: bisque;
+            .menu__btn__item_list {
+                display: inline-block;
+                width : 16%;
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+    }
+}
