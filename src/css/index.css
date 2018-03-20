@@ -77,9 +77,7 @@ table {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden; }
+    box-sizing: border-box; }
     .grid .grid__inner .grid__inner__item {
       background-color: #f6dbf8;
       position: relative;
@@ -143,17 +141,18 @@ table {
   };
 }
 */
-.square::after {
-  content: "";
-  display: block;
-  padding-bottom: 100%; }
-
-.square .img__box {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; }
+.square {
+  position: relative; }
+  .square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%; }
+  .square .img__box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
 
 .rectangle3-2::after {
   content: "";
@@ -371,16 +370,15 @@ button:hover {
   line-height: 30px; }
 
 .square_50 {
-  width: 70%;
+  width: 40%;
   right: 0;
   bottom: 10%;
-  position: absolute;
   background-color: gray;
   overflow: hidden; }
   .square_50::after {
     content: "";
     display: block;
-    padding-bottom: 200%; }
+    padding-bottom: 100%; }
   .square_50 .img__box {
     position: absolute;
     left: 0;
@@ -389,7 +387,7 @@ button:hover {
     height: 100%; }
 
 .square_30 {
-  width: 30%;
+  width: 40%;
   right: 25%;
   bottom: 5%;
   background-color: gray;
@@ -397,7 +395,7 @@ button:hover {
   .square_30::after {
     content: "";
     display: block;
-    padding-bottom: 300%; }
+    padding-bottom: 100%; }
   .square_30 .img__box {
     position: absolute;
     left: 0;
@@ -420,9 +418,13 @@ button:hover {
     height: 100%; }
 
 .jante__left {
-  width: 100%;
   background-image: url(".././img/main_side_jante.jpg");
   background-repeat: no-repeat;
-  background-position: 45%; }
+  background-position: right; }
+
+.jante__center {
+  background-image: url(".././img/main_side_jante2.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /*# sourceMappingURL=index.css.map */

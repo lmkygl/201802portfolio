@@ -19,6 +19,7 @@
 }
 
 .square {
+    position: relative;
     @include box-sizing(1, 1);
 }
 
