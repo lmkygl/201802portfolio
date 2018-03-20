@@ -77,7 +77,8 @@ table {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    position: relative; }
     .grid .grid__inner .grid__inner__item {
       background-color: #f6dbf8;
       position: relative;
@@ -373,22 +374,10 @@ button:hover {
   height: 40px; }
 
 .square__box {
-  width: 45%;
+  height: 300px;
   position: absolute;
   right: 0;
   bottom: 0;
   background-color: gray; }
-  .square__box::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-    background-color: #21cb32; }
-  .square__box .img__box {
-    background-color: #e0e0e0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; }
 
 /*# sourceMappingURL=index.css.map */
