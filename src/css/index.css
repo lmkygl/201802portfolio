@@ -80,6 +80,7 @@ table {
     box-sizing: border-box;
     position: relative; }
     .grid .grid__inner .grid__inner__item {
+      background-color: #f6dbf8;
       position: relative;
       overflow: hidden; }
   .grid .grid__row {
@@ -369,15 +370,13 @@ button:hover {
   line-height: 30px; }
 
 .square_50 {
-  width: 50%;
+  width: 20%;
   position: absolute;
-  right: 3%;
-  bottom: 0;
   background-color: gray; }
   .square_50::after {
     content: "";
     display: block;
-    padding-bottom: 150%; }
+    padding-bottom: 100%; }
   .square_50 .img__box {
     position: absolute;
     left: 0;
