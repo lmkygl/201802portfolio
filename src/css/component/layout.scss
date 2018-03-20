@@ -7,6 +7,9 @@
 .full__width {
     width: 100%;
 }
+.section_area{
+    margin-top: 80px;
+}
 
 // 말줄입표
 .line__box {
@@ -19,15 +22,10 @@
     height: 30px;
     line-height: 30px;
 }
-
-.multiline__box {
-    @include multiline(16px, 40px, 20px);
-}
-
-.square__box{
-    height: 300px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: gray;
+.box{
+    height:400px;
+    width: 100%;
+    background-image: url('../img/main_jante.jpg');
+    background-repeat: no-repeat;
+    background-position: 45%;
 }

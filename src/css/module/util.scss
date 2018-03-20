@@ -41,3 +41,6 @@
     font-size: $fz;
     height: $h;
 }
+.multiline__box {
+    @include multiline(16px, 40px, 20px);
+}
