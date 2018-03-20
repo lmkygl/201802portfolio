@@ -12,6 +12,11 @@
     margin-top: 80px;
 }
 
+.section1 {
+    height: 800px;
+    overflow: hidden;
+}
+
 // 말줄입표
 .line__box {
     text-overflow: ellipsis;
@@ -27,44 +32,83 @@
 .square_50 {
     width: 40%;
     right: 0;
-    bottom: 10%;
-   //  position: absolute;
-    background-color:gray;
-    overflow:hidden;
-  @include box-sizing(1,1);
+    bottom: 10%; //  position: absolute;
+    background-color: gray;
+    overflow: hidden;
+    @include box-sizing(1, 1);
 }
+
 .square_30 {
     width: 40%;
     right: 25%;
-    bottom: 5%;
-   // position: absolute;
-    background-color:gray;
-    overflow:hidden;
-   @include box-sizing(1,1);
+    bottom: 5%; // position: absolute;
+    background-color: gray;
+    overflow: hidden;
+    @include box-sizing(1, 1);
 }
 
-.square_130{
-    @include box-sizing(1,1.1);
-    overflow:hidden;
-    background-color:saddlebrown;
+.square_130 {
+    @include box-sizing(1, 1.1);
+    overflow: hidden;
+    background-color: saddlebrown;
 }
-.jante__left{
+
+.jante__left {
     //width: 100%;
     background-image: url('.././img/main_side_jante.jpg');
     background-repeat: no-repeat;
     background-position: right;
-}
-.jante__center{
-    background-image: url('.././img/main_side_jante2.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
+    background-size: cover;
 }
 
+.jante__center {
+    background-image: url('.././img/main_side_jante2.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.jante__right {
+    background-image: url('.././img/main_jante.jpg');
+    background-repeat: no-repeat;
+    background-position: 45%;
+    background-size: cover;
+}
+
+.left_box {
+    .square {
+        .img__box {
+            width: 80%;
+            height: 80%;
+            right: 3%;
+            bottom: -20%;
+        }
+    }
+}
+
+.center_box {
+    .square {
+        width: 120%;
+        .img__box {
+            width: 130%;
+            bottom: 0;
+        }
+    }
+}
+
+.right_box {
+    .square {
+        .img__box {
+            width: 50%;
+            right: 12%;
+            bottom: 0;
+        }
+    }
+}
 
 // .center_box {
 //     @include box-sizing(1, 1);
 // }
-
 // .right_box {
 //     @include box-sizing(3, 2);
 // }
