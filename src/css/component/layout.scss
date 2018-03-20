@@ -7,7 +7,8 @@
 .full__width {
     width: 100%;
 }
-.section_area{
+
+.section_area {
     margin-top: 80px;
 }
 
@@ -22,11 +23,13 @@
     height: 30px;
     line-height: 30px;
 }
-.box{
-   // height:400px;
-    width: 100%;
-    background-image: url('../img/main_jante.jpg');
-    background-repeat: no-repeat;
-    background-position: 35%;
-    @include box-sizing(1, 1);
-}
+
+
+
+// .center_box {
+//     @include box-sizing(1, 1);
+// }
+
+// .right_box {
+//     @include box-sizing(3, 2);
+// }

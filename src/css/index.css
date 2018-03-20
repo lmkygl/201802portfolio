@@ -80,7 +80,6 @@ table {
     box-sizing: border-box;
     position: relative; }
     .grid .grid__inner .grid__inner__item {
-      background-color: #f6dbf8;
       position: relative;
       overflow: hidden; }
   .grid .grid__row {
@@ -124,14 +123,13 @@ table {
       width: 100%;
       overflow-x: hidden; }
       .grid .grid__inner {
-        width: 33.33333% !important;
-        background-color: darkkhaki; } }
+        width: 50% !important; } }
   @media (max-width: 767px) {
     .grid {
       width: 100%;
       overflow-x: hidden; }
       .grid .grid__inner {
-        width: 50% !important; } }
+        width: 100% !important; } }
 
 /**
 .selector {
@@ -149,7 +147,6 @@ table {
   padding-bottom: 100%; }
 
 .square .img__box {
-  background-color: #e0e0e0;
   position: absolute;
   left: 0;
   top: 0;
@@ -162,7 +159,6 @@ table {
   padding-bottom: 66.66667%; }
 
 .rectangle3-2 .img__box {
-  background-color: #e0e0e0;
   position: absolute;
   left: 0;
   top: 0;
@@ -175,12 +171,29 @@ table {
   padding-bottom: 56.25%; }
 
 .ractangle16-9 .img__box {
-  background-color: #e0e0e0;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%; }
+
+.square_small {
+  width: 50%;
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+  background-color: gray;
+  z-index: 2; }
+  .square_small::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%; }
+  .square_small .img__box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
 
 .multiline__box {
   overflow: hidden;
@@ -372,22 +385,5 @@ button:hover {
   display: block;
   height: 30px;
   line-height: 30px; }
-
-.box {
-  width: 100%;
-  background-image: url("../img/main_jante.jpg");
-  background-repeat: no-repeat;
-  background-position: 35%; }
-  .box::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%; }
-  .box .img__box {
-    background-color: #e0e0e0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; }
 
 /*# sourceMappingURL=index.css.map */

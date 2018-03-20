@@ -26,7 +26,7 @@
         box-sizing: border-box;
         position: relative;
         .grid__inner__item {
-            background-color: rgb(246, 219, 248);
+           // background-color: rgb(246, 219, 248);
             position: relative;
             overflow: hidden;
         }
@@ -101,15 +101,15 @@
         width: 100%;
         overflow-x: hidden;
         .grid__inner {
-            width: (100%/3) !important;
-            background-color: darkkhaki;
+            width: (100%/2) !important;
+           // background-color: darkkhaki;
         }
     }
     @include mobile {
         width: 100%;
         overflow-x: hidden;
         .grid__inner {
-            width: 50% !important;
+            width: 100% !important;
         }
     }
 }

@@ -9,7 +9,7 @@
       //  background-color: rgb(33, 203, 50);
     }
     .img__box {
-        background-color: rgb(224, 224, 224);
+        // background-color: rgb(224, 224, 224);
         position: absolute;
         left: 0;
         top: 0;
@@ -28,6 +28,16 @@
 
 .ractangle16-9 {
     @include box-sizing(16, 9);
+}
+
+.square_small {
+    width: 50%;
+    position: absolute;
+    right:3%;
+    bottom:0;
+    background-color:gray;
+    @include box-sizing(1,1);
+    z-index:2;
 }
 
 // 말줄임표 
