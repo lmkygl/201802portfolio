@@ -26,9 +26,9 @@
         box-sizing: border-box;
         position: relative;
         .grid__inner__item {
-            background-color: rgb(246, 219, 248);
+            // background-color: rgb(246, 219, 248);
             position: relative;
-            overflow: hidden;
+           // overflow: hidden;
         }
     }
     @include grid-spacing($grid-spacing, $grid-spacing); 

@@ -80,9 +80,7 @@ table {
     box-sizing: border-box;
     position: relative; }
     .grid .grid__inner .grid__inner__item {
-      background-color: #f6dbf8;
-      position: relative;
-      overflow: hidden; }
+      position: relative; }
   .grid .grid__row {
     margin-top: -8px;
     margin-right: -8px; }
@@ -356,7 +354,7 @@ button:hover {
 .full__width {
   width: 100%; }
 
-.section_area {
+.section__area {
   margin-top: 80px; }
 
 .line__box {
@@ -370,9 +368,11 @@ button:hover {
   line-height: 30px; }
 
 .square_50 {
-  width: 20%;
+  width: 70%;
+  right: 3%;
+  bottom: 10%;
   position: absolute;
-  background-color: gray; }
+  overflow: hidden; }
   .square_50::after {
     content: "";
     display: block;
@@ -383,5 +383,43 @@ button:hover {
     top: 0;
     width: 100%;
     height: 100%; }
+
+.square_30 {
+  width: 40%;
+  right: 25%;
+  bottom: 10%;
+  position: absolute;
+  overflow: hidden; }
+  .square_30::after {
+    content: "";
+    display: block;
+    padding-bottom: 300%; }
+  .square_30 .img__box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+
+.square_130 {
+  width: 130%;
+  overflow: hidden;
+  background-color: saddlebrown; }
+  .square_130::after {
+    content: "";
+    display: block;
+    padding-bottom: 110%; }
+  .square_130 .img__box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+
+.jante__left {
+  width: 100%;
+  height: 100%;
+  background-image: url(".././img/main_side_jante2.jpg");
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=index.css.map */
