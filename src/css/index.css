@@ -441,8 +441,6 @@ button:hover {
   bottom: -20%; }
 
 .center_box .square .img__box {
-  width: 130%;
-  height: 90%;
   top: 0; }
 
 .right_box .square .img__box {
@@ -451,7 +449,9 @@ button:hover {
   bottom: 0; }
 
 .main__name__area {
-  padding-top: 220px; }
+  z-index: 1;
+  position: absolute;
+  bottom: 0; }
   .main__name__area .main_name_title {
     margin-top: 100px;
     text-indent: 5px; }
@@ -462,5 +462,9 @@ button:hover {
   .main__name__area .main_name_sub {
     font-size: 14px;
     line-height: 30px; }
+
+@media (max-width: 767px) {
+  .right_box {
+    display: none; } }
 
 /*# sourceMappingURL=index.css.map */

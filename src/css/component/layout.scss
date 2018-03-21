@@ -67,8 +67,8 @@
     .square {
         // width: 120%;
         .img__box {
-            width: 130%;
-            height: 90%;
+           // width: 100%;
+            //height: 50%;
             top: 0;
         }
     }
@@ -85,7 +85,10 @@
 }
 
 .main__name__area {
-    padding-top: 220px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+   // padding-top: 100px;
     .main_name_title {
         margin-top: 100px;
         text-indent: 5px;
@@ -100,10 +103,8 @@
         line-height: 30px;
     }
 }
-
-// .center_box {
-//     @include box-sizing(1, 1);
-// }
-// .right_box {
-//     @include box-sizing(3, 2);
-// }
+@include mobile {
+    .right_box {
+       display: none;
+    }
+}
