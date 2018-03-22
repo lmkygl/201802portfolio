@@ -526,9 +526,9 @@ button:hover {
   background-color: #F5F5F2; }
 
 .img__box {
-  width: 40%;
+  width: 30%;
   float: left;
-  background-color: green; }
+  background-color: #2D3048; }
   .img__box::after {
     content: "";
     display: block;
@@ -540,13 +540,13 @@ button:hover {
     height: 100%; }
 
 .text__box {
-  width: 60%;
+  width: 70%;
   float: left;
-  background-color: goldenrod; }
+  background-color: #fff; }
   .text__box::after {
     content: "";
     display: block;
-    padding-bottom: 66.66667%; }
+    padding-bottom: 25%; }
   .text__box .img__box {
     background-color: #e0e0e0;
     position: absolute;

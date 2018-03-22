@@ -170,14 +170,14 @@
     background-color: #F5F5F2;
 }
 .img__box{
-    width:40%;
+    width:30%;
     float: left;
-    background-color: green;
+    background-color: #2D3048;
     @include box-sizing(1, 1);
 }
 .text__box{
-    width: 60%;
+    width: 70%;
     float: left;
-    background-color:goldenrod;
-    @include box-sizing(3, 2);
+    background-color:#fff;
+    @include box-sizing(16, 4);
 }
