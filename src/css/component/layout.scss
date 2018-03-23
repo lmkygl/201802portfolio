@@ -179,6 +179,9 @@
     float: left;
     text-align: center;
     overflow: hidden;
+    .section__sub__title__color{
+        margin-top:40px;
+    }
     .section__sub__btn {
         margin-top: 50px;
         button {
@@ -187,7 +190,7 @@
             color: #be9673;
             font-weight: 600;
             &:hover {
-                background-colorp: #be9673;
+                background-color: #be9673;
                 border-color: #be9673;
             }
         }
