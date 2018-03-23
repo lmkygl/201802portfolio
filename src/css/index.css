@@ -524,32 +524,50 @@ button:hover {
 
 .square__box {
   width: 40%;
+  height: 400px;
   float: left;
   text-align: center;
   overflow: hidden; }
 
 .rectangle__box {
   width: 60%;
+  height: 400px;
   float: left;
   text-align: center;
   overflow: hidden; }
+  .rectangle__box .section__sub__btn {
+    margin-top: 50px; }
+    .rectangle__box .section__sub__btn button {
+      width: 25%;
+      border-color: #be9673;
+      color: #be9673;
+      font-weight: 600; }
+      .rectangle__box .section__sub__btn button:hover {
+        background-colorp: #be9673;
+        border-color: #be9673; }
 
-.box_1_img {
+.story__img__box1 {
   background-image: url("./../img/bg_section01.jpg");
-  background-size: cover;
-  height: 400px; }
+  background-size: cover; }
 
-.box_3_img {
-  background-image: url("./../img/story_logo.png");
-  background-size: cover;
-  height: 400px; }
-
-.box_2 {
+.story__img__box2 {
   background-image: url("./../img/bg_section03.jpg");
-  background-size: cover;
-  height: 400px; }
+  background-size: cover; }
 
-.box_2_text {
-  height: 300px; }
+.story__img__box3 {
+  background-image: url("./../img/story_logo.png");
+  background-size: cover; }
+
+.section__sub__title__color {
+  color: #be9673;
+  margin-top: 100px; }
+
+.section__content__paragraph {
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 22px; }
+
+.last__paragraph {
+  margin-top: 140px; }
 
 /*# sourceMappingURL=index.css.map */
