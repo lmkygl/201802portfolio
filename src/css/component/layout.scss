@@ -232,6 +232,10 @@
 
 .sns__link__area{
     // height:220px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
     @include tablet {
         width: 100%;
         overflow-x: hidden;
@@ -244,12 +248,8 @@
         width: 100%;
         overflow-x: hidden;
         .grid__inner {
-            width: (100%/6) !important;
+            width: (100%/4) !important;
         }
     }
 }
-.greend{
-    color: rebeccapurple;
-    width: 100%;
-    height: 120px;
-}
+
