@@ -232,10 +232,13 @@
 
 .sns__link__area{
     // height:220px;
+    margin: 0;
+    padding:0;
     img{
         width: 100%;
         height: 100%;
     }
+
     @include tablet {
         width: 100%;
         overflow-x: hidden;

@@ -575,22 +575,23 @@ button:hover {
 .last__paragraph {
   margin-top: 140px; }
 
-.sns__link__area img {
-  width: 100%;
-  height: 100%; }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .sns__link__area {
+.sns__link__area {
+  margin: 0;
+  padding: 0; }
+  .sns__link__area img {
     width: 100%;
-    overflow-x: hidden; }
-    .sns__link__area .grid__inner {
-      width: 16.66667% !important; } }
-
-@media (max-width: 767px) {
-  .sns__link__area {
-    width: 100%;
-    overflow-x: hidden; }
-    .sns__link__area .grid__inner {
-      width: 25% !important; } }
+    height: 100%; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .sns__link__area {
+      width: 100%;
+      overflow-x: hidden; }
+      .sns__link__area .grid__inner {
+        width: 16.66667% !important; } }
+  @media (max-width: 767px) {
+    .sns__link__area {
+      width: 100%;
+      overflow-x: hidden; }
+      .sns__link__area .grid__inner {
+        width: 25% !important; } }
 
 /*# sourceMappingURL=index.css.map */
