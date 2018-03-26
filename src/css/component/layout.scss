@@ -239,12 +239,25 @@
         height: 100%;
     }
 
+    .sns__img__area{
+        width: 100%;
+        height: 100%;
+       // background-color:green;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
     @include tablet {
         width: 100%;
         overflow-x: hidden;
         .grid__inner {
             width: (100%/6) !important;
-           // background-color: darkkhaki;
         }
     }
     @include mobile {
