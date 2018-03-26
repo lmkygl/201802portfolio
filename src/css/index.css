@@ -486,7 +486,28 @@ button:hover {
     box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.3); }
 
 .jante__box {
-  background-image: url(""); }
+  background-image: url("./../img/product_jante.jpg");
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.atelier__box {
+  background-image: url("./../img/product_atelier.jpg");
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.hygge__box {
+  background-image: url("./../img/product_hygge.jpg");
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.platingcook__box {
+  background-image: url("./../img/product_platingcook.jpg");
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .stores__ontv__box {
   text-align: center;
