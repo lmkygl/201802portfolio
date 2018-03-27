@@ -13,35 +13,24 @@
         .m_hamburger{
             height: 100%;
         }
-        span {
+        span{
             display: block;
             position: absolute;
             margin: auto;
-            top: 45px;
             left: 0;
             right: 0;
             height: 2px;
             width: 32px;
             background-color: #b4b3b3;
-            transition: background .2s ease-in-out;
+        }
+        .span__center {
+            top: 45px;
         }
         .span__before {
-            position: absolute;
-            display: block;
-            left: 0;
-            width: 32px;
-            height: 2px;
-            background-color: #b4b3b3;
             top: 35px;
         }
         .span__after {
-            position: absolute;
-            display: block;
-            left: 0;
-            width: 32px;
-            height: 2px;
-            background-color: #b4b3b3;
-            bottom: 24px;
+            bottom: 33px;
         }
         .m_hamburgercloseactive .span__center {
             background-color: transparent;

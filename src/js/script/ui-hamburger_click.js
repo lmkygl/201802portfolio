@@ -20,12 +20,21 @@
                 top:40
             });
             TweenMax.to($span__after , 0.2, {
-                rotation: 45,
+                rotation: -45,
                 bottom:40
             });
+
         } else {
             TweenMax.to($navi__list__area, 0.2, {
                 left: '100%'
+            });
+            TweenMax.to($span__before , 0.2, {
+                rotation: 0,
+                top:35
+            });
+            TweenMax.to($span__after , 0.2, {
+                rotation: -45,
+                bottom:33
             });
         }
     }
