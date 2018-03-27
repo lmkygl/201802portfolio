@@ -4,7 +4,7 @@
     var $navi__list__area = $('[data-ui="navi__area"]');
     var $span__before = $('.span__before');
     var $span__after = $('.span__after');
-    
+
     TweenMax.to($navi__list__area, 0.2, {
         left: '-100%'
     });
@@ -15,26 +15,26 @@
             TweenMax.to($navi__list__area, 0.2, {
                 left: '5%'
             });
-            TweenMax.to($span__before , 0.2, {
+            TweenMax.to($span__before, 0.2, {
                 rotation: -45,
-                top:40
+                top: 40
             });
-            TweenMax.to($span__after , 0.2, {
+            TweenMax.to($span__after, 0.2, {
                 rotation: 45,
-                bottom:47
+                bottom: 47
             });
 
         } else {
             TweenMax.to($navi__list__area, 0.2, {
                 left: '100%'
             });
-            TweenMax.to($span__before , 0.2, {
+            TweenMax.to($span__before, 0.2, {
                 rotation: 0,
-                top:35
+                top: 35
             });
-            TweenMax.to($span__after , 0.2, {
+            TweenMax.to($span__after, 0.2, {
                 rotation: 0,
-                bottom:33
+                bottom: 33
             });
         }
     }
