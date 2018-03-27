@@ -37,14 +37,6 @@
         .m_hamburgercloseactive .span__center {
             background-color: transparent;
         }
-        // .m_hamburgercloseactive .span__before {
-        //     transform: rotate(-45deg);
-        //     top: 0;
-        // }
-        // .m_hamburgercloseactive .span__after {
-        //     transform: rotate(45deg);
-        //     bottom: 0;
-        // }
     }
     .menu__item__area {
         width: 100%;
@@ -62,6 +54,12 @@
                 height: 100%;
                 line-height: 90px;
                 text-align: center;
+                span{
+                    width:0;
+                    height:1px;
+                    display:block;
+                    margin-top:10px;
+                }
             }
         }
     }
