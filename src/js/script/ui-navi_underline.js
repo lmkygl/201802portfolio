@@ -10,13 +10,14 @@
         //console.log($naviEvent_line);
                 
         if (naviEvnet_type === 'mouseenter') {
-            $naviEvent_line.animate({
+            
+            TweenMax.to($naviEvent_line, 0.3,{
                 width: '100%'
-            }, 0.3);
+            });
         } else if (naviEvnet_type === 'mouseleave') {
-            $naviEvent_line.animate({
+            TweenMax.to($naviEvent_line, 0.3,{
                 width: 0
-            }, 0.3); 
+            });
         }
     }
     

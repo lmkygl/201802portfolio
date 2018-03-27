@@ -312,7 +312,7 @@ button:hover {
           display: block;
           background-color: #425866;
           position: absolute;
-          bottom: 20px; }
+          bottom: 0; }
   .header .logo {
     width: 95%;
     height: 90px;
