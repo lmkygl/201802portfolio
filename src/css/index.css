@@ -302,11 +302,17 @@ button:hover {
         height: 100%;
         line-height: 90px;
         text-align: center; }
-        .header .menu__item__area ul .menu__btn__item_list span {
+        .header .menu__item__area ul .menu__btn__item_list a {
+          display: inline-block;
+          height: 60px;
+          position: relative; }
+        .header .menu__item__area ul .menu__btn__item_list .underline {
           width: 0;
           height: 1px;
           display: block;
-          margin-top: 10px; }
+          background-color: #425866;
+          position: absolute;
+          bottom: 20px; }
   .header .logo {
     width: 95%;
     height: 90px;
