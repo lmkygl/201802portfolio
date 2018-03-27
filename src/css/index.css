@@ -279,9 +279,11 @@ button:hover {
     .header .menu__btn__area .span__center {
       top: 45px; }
     .header .menu__btn__area .span__before {
-      top: 35px; }
+      top: 35px;
+      left: 0; }
     .header .menu__btn__area .span__after {
-      bottom: 33px; }
+      bottom: 33px;
+      left: 0; }
     .header .menu__btn__area .m_hamburgercloseactive .span__center {
       background-color: transparent; }
   .header .menu__item__area {

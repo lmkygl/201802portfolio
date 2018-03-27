@@ -3,7 +3,8 @@
     var $navi__btn = $('[data-ui="hamburger__btn"]');
     var $navi__list__area = $('[data-ui="navi__area"]');
     var $span__before = $('.span__before');
-    var $span__after = $('span__after');
+    var $span__after = $('.span__after');
+    
     TweenMax.to($navi__list__area, 0.2, {
         left: '-100%'
     });
@@ -20,8 +21,8 @@
                 top:40
             });
             TweenMax.to($span__after , 0.2, {
-                rotation: -45,
-                bottom:40
+                rotation: 45,
+                bottom:47
             });
 
         } else {
@@ -33,7 +34,7 @@
                 top:35
             });
             TweenMax.to($span__after , 0.2, {
-                rotation: -45,
+                rotation: 0,
                 bottom:33
             });
         }
