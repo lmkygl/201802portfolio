@@ -10,6 +10,9 @@
         float: left;
         overflow: hidden;
         cursor: pointer;
+        .m_hamburger{
+            height: 100%;
+        }
         span {
             display: block;
             position: absolute;
@@ -43,14 +46,14 @@
         .m_hamburgercloseactive .span__center {
             background-color: transparent;
         }
-        .m_hamburgercloseactive .span__before {
-            transform: rotate(-45deg);
-            top: 0;
-        }
-        .m_hamburgercloseactive .span__after {
-            transform: rotate(45deg);
-            bottom: 0;
-        }
+        // .m_hamburgercloseactive .span__before {
+        //     transform: rotate(-45deg);
+        //     top: 0;
+        // }
+        // .m_hamburgercloseactive .span__after {
+        //     transform: rotate(45deg);
+        //     bottom: 0;
+        // }
     }
     .menu__item__area {
         width: 100%;

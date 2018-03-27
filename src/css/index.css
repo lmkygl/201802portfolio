@@ -265,6 +265,8 @@ button:hover {
     float: left;
     overflow: hidden;
     cursor: pointer; }
+    .header .menu__btn__area .m_hamburger {
+      height: 100%; }
     .header .menu__btn__area span {
       display: block;
       position: absolute;
@@ -294,12 +296,6 @@ button:hover {
       bottom: 24px; }
     .header .menu__btn__area .m_hamburgercloseactive .span__center {
       background-color: transparent; }
-    .header .menu__btn__area .m_hamburgercloseactive .span__before {
-      transform: rotate(-45deg);
-      top: 0; }
-    .header .menu__btn__area .m_hamburgercloseactive .span__after {
-      transform: rotate(45deg);
-      bottom: 0; }
   .header .menu__item__area {
     width: 100%;
     height: 90px;
