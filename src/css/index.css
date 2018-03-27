@@ -316,8 +316,7 @@ button:hover {
     .header .menu__item__area ul {
       width: 100%;
       height: 100%;
-      background-color: #fff;
-      display: none; }
+      background-color: #fff; }
       .header .menu__item__area ul .menu__btn__item_list {
         width: 16%;
         float: left;
