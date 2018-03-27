@@ -263,7 +263,8 @@ button:hover {
     height: 90px;
     position: relative;
     float: left;
-    overflow: hidden; }
+    overflow: hidden;
+    cursor: pointer; }
     .header .menu__btn__area span {
       display: block;
       position: absolute;
@@ -275,36 +276,28 @@ button:hover {
       width: 32px;
       background-color: #b4b3b3;
       transition: background .2s ease-in-out; }
-    .header .menu__btn__area span::before {
+    .header .menu__btn__area .span__before {
       position: absolute;
       display: block;
       left: 0;
-      width: 100%;
+      width: 32px;
       height: 2px;
       background-color: #b4b3b3;
-      content: "";
-      top: -12px;
-      transition-duration: .3s, .3s;
-      transition-delay: 0s, 0s;
-      transition-property: top, transform, -webkit-transform; }
-    .header .menu__btn__area span::after {
+      top: 35px; }
+    .header .menu__btn__area .span__after {
       position: absolute;
       display: block;
       left: 0;
-      width: 100%;
+      width: 32px;
       height: 2px;
       background-color: #b4b3b3;
-      content: "";
-      bottom: -12px;
-      transition-property: bottom, transform, -webkit-transform;
-      transition-duration: .3s, .3s;
-      transition-delay: 0s, 0s; }
-    .header .menu__btn__area .m_hamburgercloseactive span {
+      bottom: 24px; }
+    .header .menu__btn__area .m_hamburgercloseactive .span__center {
       background-color: transparent; }
-    .header .menu__btn__area .m_hamburgercloseactive span::before {
+    .header .menu__btn__area .m_hamburgercloseactive .span__before {
       transform: rotate(-45deg);
       top: 0; }
-    .header .menu__btn__area .m_hamburgercloseactive span::after {
+    .header .menu__btn__area .m_hamburgercloseactive .span__after {
       transform: rotate(45deg);
       bottom: 0; }
   .header .menu__item__area {
@@ -314,8 +307,10 @@ button:hover {
     left: 5%;
     top: 0; }
     .header .menu__item__area ul {
+      width: 100%;
       height: 100%;
-      background-color: #fff; }
+      background-color: #fff;
+      display: none; }
       .header .menu__item__area ul .menu__btn__item_list {
         width: 16%;
         float: left;

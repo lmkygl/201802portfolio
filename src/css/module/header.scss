@@ -9,6 +9,7 @@
         position: relative;
         float: left;
         overflow: hidden;
+        cursor: pointer;
         span {
             display: block;
             position: absolute;
@@ -21,40 +22,32 @@
             background-color: #b4b3b3;
             transition: background .2s ease-in-out;
         }
-        span::before {
+        .span__before {
             position: absolute;
             display: block;
             left: 0;
-            width: 100%;
+            width: 32px;
             height: 2px;
             background-color: #b4b3b3;
-            content: "";
-            top: -12px;
-            transition-duration: .3s, .3s;
-            transition-delay: 0s, 0s;
-            transition-property: top, transform, -webkit-transform;
+            top: 35px;
         }
-        span::after {
+        .span__after {
             position: absolute;
             display: block;
             left: 0;
-            width: 100%;
+            width: 32px;
             height: 2px;
             background-color: #b4b3b3;
-            content: "";
-            bottom: -12px;
-            transition-property: bottom, transform, -webkit-transform;
-            transition-duration: .3s, .3s;
-            transition-delay: 0s, 0s;
+            bottom: 24px;
         }
-        .m_hamburgercloseactive span{
-            background-color:transparent;
+        .m_hamburgercloseactive .span__center {
+            background-color: transparent;
         }
-        .m_hamburgercloseactive span::before{
+        .m_hamburgercloseactive .span__before {
             transform: rotate(-45deg);
-            top:0;
+            top: 0;
         }
-        .m_hamburgercloseactive span::after{
+        .m_hamburgercloseactive .span__after {
             transform: rotate(45deg);
             bottom: 0;
         }
@@ -66,15 +59,14 @@
         left: 5%;
         top: 0;
         ul {
-           // width: 100%;
+            width: 100%;
             height: 100%;
             background-color: #fff;
-           // display: none;
             .menu__btn__item_list {
-                width : 16%;
+                width: 16%;
                 float: left;
                 height: 100%;
-                line-height:90px;
+                line-height: 90px;
                 text-align: center;
             }
         }
