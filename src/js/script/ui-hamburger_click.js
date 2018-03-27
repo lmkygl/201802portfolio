@@ -10,7 +10,6 @@
     });
 
     function navigation__click(e) {
-        console.log(11);
         $(this).toggleClass('m_hamburgercloseactive');
         if ($(this).hasClass('m_hamburgercloseactive')) {
             TweenMax.to($navi__list__area, 0.2, {
