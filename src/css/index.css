@@ -504,7 +504,8 @@ button:hover {
     font-size: 17px;
     margin-top: 10px;
     display: block;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    color: #be9673; }
 
 .jante__box {
   background-image: url("./../img/product_jante.jpg");
