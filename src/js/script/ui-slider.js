@@ -3,7 +3,7 @@
     var $slide__area = $('[data-ui="slider__area"]');
     var $btn = $slide__area.find('.btn');
     var animating = false;
-    var animation_speed = 500;
+    var animation_speed = 300;
 
     function next_slide_effect(e) {
         var $target = $(e.target);
