@@ -6,20 +6,46 @@
     var animation_speed = 500;
     var interval;
 
-    function next_slide_effect(e) {
-        var $target = $(e.target);
-        var $parents = $target.parents('[data-ui="slider__area"]');
-        var $inner_frame = $parents.find('[data-ui="inner__frames"]');
-        var $scene = $inner_frame.find('.scene');
-        var $out_width = $parents.find('[data-ui="out__frame"]').width();
+    function next_slide_effect(e, index) {
+        // var $target = $(e.target);
+        // var $parents = $target.parents('[data-ui="slider__area"]');
+        // var $inner_frame = $parents.find('[data-ui="inner__frames"]');
+        // var $scene = $inner_frame.find('.scene');
+        // var $out_width = $parents.find('[data-ui="out__frame"]').width();
 
-        $inner_frame.animate({
-            left: -$out_width
-        }, animation_speed, 'swing', function () {
-            $scene.eq(0).insertAfter($scene.eq(-1));
-            $inner_frame.css('left', 0);
-            animating = false;
-        });
+        // $inner_frame.animate({
+        //     left: -$out_width
+        // }, animation_speed, 'swing', function () {
+        //     $scene.eq(0).insertAfter($scene.eq(-1));
+        //     $inner_frame.css('left', 0);
+        //     animating = false;
+        // });
+
+        if (e !== null) {
+            var $target = $(e.target);
+            var $parents = $target.parents('[data-ui="slider__area"]');
+            var $inner_frame = $parents.find('[data-ui="inner__frames"]');
+            var $scene = $inner_frame.find('.scene');
+            var $out_width = $parents.find('[data-ui="out__frame"]').width();
+
+            $inner_frame.animate({
+                left: -$out_width
+            }, animation_speed, 'swing', function () {
+                $scene.eq(0).insertAfter($scene.eq(-1));
+                $inner_frame.css('left', 0);
+                animating = false;
+            });
+
+        } else {
+            $inner_frame.animate({
+                left: -$out_width
+            }, animation_speed, 'swing', function () {
+                $scene.eq(0).insertAfter($scene.eq(-1));
+                $inner_frame.css('left', 0);
+                animating = false;
+            });
+
+        }
     }
 
     function prev_slide_effect(e) {
@@ -36,6 +62,7 @@
         }, 300, 'swing', function () {
             animating = false;
         });
+
     }
 
     function slide_effect(e) {
@@ -55,12 +82,12 @@
 
     $btn.on('click', slide_effect);
 
-    // function startInterval() {
-    //     clearInterval(interval);
-    //     interval = setInterval(function() {
-    //         next_slide_effect(e);
-    //     }, 2000);
-    // }
-    // startInterval();
+    function startInterval() {
+        clearInterval(interval);
+        interval = setInterval(function () {
+            next_slide_effect(null, index);
+        }, 2000);
+    }
+    startInterval();
 
 }());
