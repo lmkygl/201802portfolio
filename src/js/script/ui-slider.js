@@ -6,27 +6,13 @@
     var animation_speed = 500;
     var interval;
 
-    function next_slide_effect(e, index) {
-        // var $target = $(e.target);
-        // var $parents = $target.parents('[data-ui="slider__area"]');
-        // var $inner_frame = $parents.find('[data-ui="inner__frames"]');
-        // var $scene = $inner_frame.find('.scene');
-        // var $out_width = $parents.find('[data-ui="out__frame"]').width();
-
-        // $inner_frame.animate({
-        //     left: -$out_width
-        // }, animation_speed, 'swing', function () {
-        //     $scene.eq(0).insertAfter($scene.eq(-1));
-        //     $inner_frame.css('left', 0);
-        //     animating = false;
-        // });
+    function next_slide_effect(e) {
+        var $inner_frame = $slide__area.find('[data-ui="inner__frames"]');
+        var $scene = $inner_frame.find('.scene');
+        var $out_width = $slide__area.find('[data-ui="out__frame"]').width();
 
         if (e !== null) {
             var $target = $(e.target);
-            var $parents = $target.parents('[data-ui="slider__area"]');
-            var $inner_frame = $parents.find('[data-ui="inner__frames"]');
-            var $scene = $inner_frame.find('.scene');
-            var $out_width = $parents.find('[data-ui="out__frame"]').width();
 
             $inner_frame.animate({
                 left: -$out_width
@@ -85,9 +71,15 @@
     function startInterval() {
         clearInterval(interval);
         interval = setInterval(function () {
-            next_slide_effect(null, index);
+            next_slide_effect(null);
         }, 2000);
     }
-    startInterval();
 
+    $(window).on('load blur focus', function (e) {
+        if (e.type === 'blur') {
+            clearInterval(interval);
+        } else {
+            startInterval();
+        }
+    });
 }());
