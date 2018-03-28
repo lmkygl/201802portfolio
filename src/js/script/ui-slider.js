@@ -33,7 +33,7 @@
         $scene.eq(-1).insertBefore($scene.eq(0));
         $inner_frame.animate({
             left: 0
-        }, animation_speed, 'swing', function () {
+        }, 300, 'swing', function () {
             animating = false;
         });
     }
@@ -55,12 +55,12 @@
 
     $btn.on('click', slide_effect);
 
-    function startInterval() {
-        clearInterval(interval);
-        interval = setInterval(function() {
-            next_slide_effect();
-        }, 2000);
-    }
-    startInterval();
+    // function startInterval() {
+    //     clearInterval(interval);
+    //     interval = setInterval(function() {
+    //         next_slide_effect(e);
+    //     }, 2000);
+    // }
+    // startInterval();
 
 }());

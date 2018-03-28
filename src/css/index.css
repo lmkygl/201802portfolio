@@ -439,9 +439,14 @@ button:hover {
   overflow: hidden; }
   .slider__visual__area .slider_visual_wrap {
     overflow: hidden;
-    width: 100%; }
+    width: 100%;
+    height: 1000px;
+    position: relative; }
     .slider__visual__area .slider_visual_wrap .slider {
-      width: 400%; }
+      width: 400%;
+      position: absolute;
+      left: 0;
+      top: 0; }
       .slider__visual__area .slider_visual_wrap .slider li {
         float: left;
         width: 25%; }
