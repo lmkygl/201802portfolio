@@ -608,7 +608,8 @@ button:hover {
     height: 100%; }
   .sns__link__area .sns__img__area {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    overflow: hidden; }
     .sns__link__area .sns__img__area a {
       display: block; }
   @media (min-width: 768px) and (max-width: 1023px) {
