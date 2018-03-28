@@ -1,17 +1,16 @@
 // arrow 클릭시 슬라이드 
-(function(){
+(function () {
     var $slide__area = $('[data-ui="slider__area"]');
     var $btn = $slide__area.find('.btn');
     var animating = false;
     var animation_speed = 500;
 
-    function next_slide_effect(e){
+    function next_slide_effect(e) {
         var $target = $(e.target);
         var $parents = $target.parents('[data-ui="slider__area"]');
         var $inner_frame = $parents.find('[data-ui="inner__frames"]');
         var $scene = $inner_frame.find('.scene');
-        var $out_width = $parents.find('[data-ui="out_frame"]').width();
-        var $indcator = $parents.find('.slide_indicator_btn');
+        var $out_width = $parents.find('[data-ui="out__frame"]').width();
 
         $inner_frame.animate({
             left: -$out_width
@@ -22,36 +21,35 @@
         });
     }
 
-    function prev_slide_effect(e){
+    function prev_slide_effect(e) {
         var $target = $(e.target);
-        var $parents = $target.parents('[data-ui="slider"]');
-        var $inner_frame = $parents.find('[data-ui="inner_frame"]');
+        var $parents = $target.parents('[data-ui="slider__area"]');
+        var $inner_frame = $parents.find('[data-ui="inner__frames"]');
         var $scene = $inner_frame.find('.scene');
-        var $out_width = $parents.find('[data-ui="out_frame"]').width();
+        var $out_width = $parents.find('[data-ui="out__frame"]').width();
 
         $inner_frame.css('left', -$out_width);
         $scene.eq(-1).insertBefore($scene.eq(0));
         $inner_frame.animate({
             left: 0
-        }, animation_speed, 'swing', function(){
+        }, animation_speed, 'swing', function () {
             animating = false;
         });
     }
 
     function slide_effect(e) {
-      var $target = $(e.target);
-      if ($target.hasClass('slide_next_btn')) {
-        if (!animating) {
-            animating = true;
-            next_slide_effect(e);
-        }  
-      }
-      else if ($target.hasClass('slide_prev_btn')) {
-          if (!animating) {
-            animating = true;
-            prev_slide_effect(e);
-          }
-      }
+        var $target = $(e.target);
+        if ($target.hasClass('next_btn')) {
+            if (!animating) {
+                animating = true;
+                next_slide_effect(e);
+            }
+        } else if ($target.hasClass('prve_btn')) {
+            if (!animating) {
+                animating = true;
+                prev_slide_effect(e);
+            }
+        }
     }
 
     $btn.on('click', slide_effect);

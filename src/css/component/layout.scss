@@ -67,9 +67,10 @@
     position: relative;
     overflow: hidden;
     .slider_visual_wrap {
-        width: 400%;
-        position: relative;
+        overflow: hidden;
+        width: 100%;
         .slider {
+            width: 400%;
             li {
                 float: left;
                 width: 25%;
