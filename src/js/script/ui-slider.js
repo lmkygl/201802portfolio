@@ -3,7 +3,8 @@
     var $slide__area = $('[data-ui="slider__area"]');
     var $btn = $slide__area.find('.btn');
     var animating = false;
-    var animation_speed = 300;
+    var animation_speed = 500;
+    var interval;
 
     function next_slide_effect(e) {
         var $target = $(e.target);
@@ -53,4 +54,13 @@
     }
 
     $btn.on('click', slide_effect);
+
+    function startInterval() {
+        clearInterval(interval);
+        interval = setInterval(function() {
+            next_slide_effect();
+        }, 2000);
+    }
+    startInterval();
+
 }());

@@ -449,12 +449,12 @@ button:hover {
     cursor: pointer;
     position: absolute;
     left: 5%;
-    top: 50%; }
+    top: 40%; }
   .slider__visual__area .next_btn {
     cursor: pointer;
     position: absolute;
     right: 5%;
-    top: 50%; }
+    top: 40%; }
 
 .product__link__area {
   position: relative;
