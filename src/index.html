@@ -13,7 +13,7 @@
 <body>
     <div class="wrap">
         <header id="header" class="header">
-            <div class="menu__btn__area" >
+            <div class="menu__btn__area">
                 <div class="m_hamburger" data-ui="hamburger__btn">
                     <span class="span__before"></span>
                     <span class="span__center"></span>
@@ -59,7 +59,7 @@
                         </a>
                     </li>
                     <li class="menu__btn__item_list">
-                        <a href="#" title="Store"  data-ui="navi_underline">
+                        <a href="#" title="Store" data-ui="navi_underline">
                             Store
                             <span class="underline"></span>
                         </a>
@@ -73,36 +73,39 @@
             </h1>
         </header>
         <div class="container">
-            <section class="slider__visual__area full__width">
-                <div class="slider_visual_wrap">
-                    <ul class="slider">
-                        <li>
-                            <a href="#" title="jante">
-                                <img src="./img/slider_visual_jante.jpg" alt="jante" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="atelier">
-                                <img src="./img/slider_visual_atelier.jpg" alt="atelier" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="hygge">
-                                <img src="./img/slider_visual_hygge.jpg" alt="hygge" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="plating cook">
-                                <img src="./img/slider_visual_plating.jpg" alt="plating cook" />
-                            </a>
-                        </li>
-                    </ul>
+            <section class="slider__visual__area full__width" data-ui="slider__area">
+                <div class="slider_visual_wrap" data-ui="slider">
+                    <div data-ui="out__frame">
+                        <ul class="slider" data-ui="inner__frames">
+                            <li class="scene">
+                                <a href="#" title="jante">
+                                    <img src="./img/slider_visual_jante.jpg" alt="jante" />
+                                </a>
+                            </li>
+                            <li class="scene">
+                                <a href="#" title="atelier">
+                                    <img src="./img/slider_visual_atelier.jpg" alt="atelier" />
+                                </a>
+                            </li>
+                            <li class="scene">
+                                <a href="#" title="hygge">
+                                    <img src="./img/slider_visual_hygge.jpg" alt="hygge" />
+                                </a>
+                            </li>
+                            <li class="scene">
+                                <a href="#" title="plating cook">
+                                    <img src="./img/slider_visual_plating.jpg" alt="plating cook" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
-                <div class="slider_visual_arrow_area">
-                    <p class="prve_btn">
+                <div class="slider_visual_arrow_area" data-ui="slide__control">
+                    <p class="prve_btn btn" data-ui="slide_btn">
                         <img src="./img/btn_ontv_prev.png" alt="prev_btn" />
                     </p>
-                    <p class="next_btn">
+                    <p class="next_btn btn" data-ui="slide_btn">
                         <img src="./img/btn_ontv_next.png" alt="prev_next" />
                     </p>
                 </div>
