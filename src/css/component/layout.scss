@@ -245,17 +245,6 @@
     float: left;
     text-align: center;
     overflow: hidden;
-}
-
-.rectangle__box {
-    width: 60%;
-    height: 400px;
-    float: left;
-    text-align: center;
-    overflow: hidden;
-    .section__sub__title__color {
-        margin-top: 40px;
-    }
     .section__sub__btn {
         margin-top: 50px;
         button {
@@ -271,6 +260,21 @@
     }
 }
 
+.rectangle__box {
+    width: 60%;
+    height: 400px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    .section__sub__title__color {
+        margin-top: 40px;
+    }
+    
+}
+.moblie__story{
+    display:none;
+}
+
 .story__img__box1 {
     background-image: url('./../img/bg_section01.jpg');
     background-size: cover;
@@ -283,7 +287,9 @@
 
 .story__img__box3 {
     background-image: url('./../img/story_logo.png');
-    background-size: cover;
+   // background-size: cover;
+   background-repeat: no-repeat
+   background-position:top;
 }
 
 .section__sub__title__color {
@@ -364,6 +370,9 @@
         padding-bottom: 100px;
     }
 
+    .story__about__area{
+        margin-bottom: 100px;
+    }
 
     .square__box {
         width: 100%;
@@ -371,29 +380,40 @@
         float: none;
         text-align: center;
         overflow: hidden;
+        .section__sub__btn {
+            margin-top: 50px;
+            button {
+                width: 40%;
+            }
+        }
     }
     
     .rectangle__box {
         width: 100%;
-        height: 400px;
+        height: 350px;
         float: none;
-        text-align: center;
-        overflow: hidden;
         .section__sub__title__color {
             margin-top: 40px;
         }
-        .section__sub__btn {
-            margin-top: 50px;
-            button {
-                width: 25%;
-                border-color: #be9673;
-                color: #be9673;
-                font-weight: 600;
-                &:hover {
-                    background-color: #be9673;
-                    border: none;
-                }
-            }
-        }
+        
+    }
+    .frist__rectangle__box{
+        height: 380px;
+    }
+    .section__content__paragraph {
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 22px;
+        width: 80%;
+        margin: 10px auto 0; 
+    }
+    .last__paragraph {
+        margin-top: 50px;
+    }
+    .desc__story{
+        display:none;
+    }
+    .moblie__story{
+        display: block;
     }
 }

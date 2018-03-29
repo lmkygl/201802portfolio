@@ -587,6 +587,16 @@ button:hover {
   float: left;
   text-align: center;
   overflow: hidden; }
+  .square__box .section__sub__btn {
+    margin-top: 50px; }
+    .square__box .section__sub__btn button {
+      width: 25%;
+      border-color: #be9673;
+      color: #be9673;
+      font-weight: 600; }
+      .square__box .section__sub__btn button:hover {
+        background-color: #be9673;
+        border: none; }
 
 .rectangle__box {
   width: 60%;
@@ -596,16 +606,9 @@ button:hover {
   overflow: hidden; }
   .rectangle__box .section__sub__title__color {
     margin-top: 40px; }
-  .rectangle__box .section__sub__btn {
-    margin-top: 50px; }
-    .rectangle__box .section__sub__btn button {
-      width: 25%;
-      border-color: #be9673;
-      color: #be9673;
-      font-weight: 600; }
-      .rectangle__box .section__sub__btn button:hover {
-        background-color: #be9673;
-        border: none; }
+
+.moblie__story {
+  display: none; }
 
 .story__img__box1 {
   background-image: url("./../img/bg_section01.jpg");
@@ -676,29 +679,37 @@ button:hover {
     background-position: bottom right; }
   .stores__ontv__box {
     padding-bottom: 100px; }
+  .story__about__area {
+    margin-bottom: 100px; }
   .square__box {
     width: 100%;
     height: 300px;
     float: none;
     text-align: center;
     overflow: hidden; }
+    .square__box .section__sub__btn {
+      margin-top: 50px; }
+      .square__box .section__sub__btn button {
+        width: 40%; }
   .rectangle__box {
     width: 100%;
-    height: 400px;
-    float: none;
-    text-align: center;
-    overflow: hidden; }
+    height: 350px;
+    float: none; }
     .rectangle__box .section__sub__title__color {
       margin-top: 40px; }
-    .rectangle__box .section__sub__btn {
-      margin-top: 50px; }
-      .rectangle__box .section__sub__btn button {
-        width: 25%;
-        border-color: #be9673;
-        color: #be9673;
-        font-weight: 600; }
-        .rectangle__box .section__sub__btn button:hover {
-          background-color: #be9673;
-          border: none; } }
+  .frist__rectangle__box {
+    height: 380px; }
+  .section__content__paragraph {
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 22px;
+    width: 80%;
+    margin: 10px auto 0; }
+  .last__paragraph {
+    margin-top: 50px; }
+  .desc__story {
+    display: none; }
+  .moblie__story {
+    display: block; } }
 
 /*# sourceMappingURL=index.css.map */
