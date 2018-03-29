@@ -123,7 +123,7 @@ table {
       overflow-x: hidden; }
       .grid .grid__inner {
         width: 100% !important; } }
-  @media (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     .grid {
       width: 100%;
       overflow-x: hidden; }
@@ -245,8 +245,7 @@ button:hover {
 */
 .header {
   height: 90px;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   .header .menu__btn__area {
     width: 5%;
     height: 90px;
@@ -288,7 +287,6 @@ button:hover {
       .header .menu__item__area ul .menu__btn__item_list {
         width: 16%;
         float: left;
-        height: 100%;
         line-height: 90px;
         text-align: center; }
         .header .menu__item__area ul .menu__btn__item_list a {
@@ -311,6 +309,26 @@ button:hover {
     text-align: right; }
     .header .logo img {
       margin-right: 30px; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .header .menu__btn__area {
+      width: 20%; }
+    .header .menu__item__area {
+      width: 100%;
+      top: 90px;
+      left: 0;
+      z-index: 2; }
+      .header .menu__item__area ul {
+        background-color: gray;
+        height: 250px; }
+        .header .menu__item__area ul .menu__btn__item_list {
+          float: left;
+          width: 33%; }
+        .header .menu__item__area ul a {
+          font-size: 13px; }
+    .header .logo {
+      width: 80%; }
+      .header .logo img {
+        margin-right: 20px; } }
 
 /**
 .selector {
@@ -372,6 +390,9 @@ button:hover {
 .max__width {
   width: 1200px;
   margin: 0 auto; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .max__width {
+      width: 100%; } }
 
 .full__width {
   width: 100%; }
@@ -429,7 +450,7 @@ button:hover {
   .slider__visual__area .slider_visual_wrap {
     overflow: hidden;
     width: 100%;
-    height: 900px;
+    height: 700px;
     position: relative; }
     .slider__visual__area .slider_visual_wrap .slider {
       width: 400%;
@@ -439,6 +460,8 @@ button:hover {
       .slider__visual__area .slider_visual_wrap .slider li {
         float: left;
         width: 25%; }
+        .slider__visual__area .slider_visual_wrap .slider li img {
+          width: 100%; }
   .slider__visual__area .prve_btn {
     cursor: pointer;
     position: absolute;
@@ -470,28 +493,6 @@ button:hover {
     margin: 20px auto;
     box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.3); }
 
-.section__product__title {
-  font-size: 25px;
-  margin-top: 30px;
-  margin-left: 10px; }
-
-.section__product__ex {
-  font-size: 15px;
-  line-height: 25px;
-  margin-top: 10px;
-  margin-left: 10px;
-  color: #999; }
-  .section__product__ex strong {
-    display: block;
-    color: #0D364C;
-    font-weight: 700; }
-  .section__product__ex a {
-    font-size: 17px;
-    margin-top: 10px;
-    display: block;
-    letter-spacing: 1px;
-    color: #be9673; }
-
 .jante__box {
   background-image: url("./../img/product_jante.jpeg");
   background-position: right top;
@@ -515,6 +516,28 @@ button:hover {
   background-position: right bottom;
   background-size: 85% 90%;
   background-repeat: no-repeat; }
+
+.section__product__title {
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 10px; }
+
+.section__product__ex {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #999; }
+  .section__product__ex strong {
+    display: block;
+    color: #0D364C;
+    font-weight: 700; }
+  .section__product__ex a {
+    font-size: 17px;
+    margin-top: 10px;
+    display: block;
+    letter-spacing: 1px;
+    color: #be9673; }
 
 .stores__ontv__box {
   text-align: center;
@@ -618,7 +641,7 @@ button:hover {
       overflow-x: hidden; }
       .sns__link__area .grid__inner {
         width: 16.66667% !important; } }
-  @media (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     .sns__link__area {
       width: 100%;
       overflow-x: hidden; }

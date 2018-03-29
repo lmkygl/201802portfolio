@@ -1,8 +1,7 @@
 @import '../mixin/config.scss';
 .header {
     height: 90px;
-    position: relative;
-    overflow: hidden;
+    position: relative; // overflow: hidden;
     .menu__btn__area {
         width: 5%;
         height: 90px;
@@ -51,7 +50,6 @@
             .menu__btn__item_list {
                 width: 16%;
                 float: left;
-                height: 100%;
                 line-height: 90px;
                 text-align: center;
                 a {
@@ -79,6 +77,34 @@
         text-align: right;
         img {
             margin-right: 30px;
+        }
+    }
+    @include mobile {
+        .menu__btn__area {
+            width: 20%;
+        }
+        .menu__item__area {
+            width: 100%;
+            top: 90px;
+            left: 0;
+            z-index: 2;
+            ul {
+                background-color: gray;
+                height: 250px;
+                .menu__btn__item_list {
+                    float: left;
+                    width: 33%;
+                }
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+        .logo {
+            width: 80%;
+            img {
+                margin-right: 20px;
+            }
         }
     }
 }

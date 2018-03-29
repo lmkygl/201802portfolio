@@ -2,6 +2,9 @@
 .max__width {
     width: $max-width;
     margin: 0 auto;
+    @include mobile {
+        width: 100%;
+     }
 }
 
 .full__width {
@@ -69,7 +72,7 @@
     .slider_visual_wrap {
         overflow: hidden;
         width: 100%;
-        height: 900px;
+        height: 700px;
         position: relative;
         .slider {
             width: 400%;
@@ -79,8 +82,11 @@
             li {
                 float: left;
                 width: 25%;
-                
+                img{
+                    width:100%;
+                }
             }
+            
         }
     }
     .prve_btn {
@@ -102,6 +108,7 @@
     background-color: #F5F5F2;
     padding-bottom: 100px;
     overflow: hidden;
+    
     .side_title {
         font-weight: 700;
         font-size: 120px;
@@ -113,38 +120,14 @@
         top: 180px;
     }
     .product__link {
+        
         .product__link__box {
-            height: 500px; // 임시
+            height: 500px; 
             width: 90%;
             margin: 20px auto;
             box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.3);
         }
     }
-}
-.section__product__title{
-    font-size:25px;
-    margin-top: 30px;
-    margin-left: 10px;
-}
-.section__product__ex{
-    font-size: 15px;
-    line-height: 25px;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: #999;
-    strong{
-        display: block;
-        color:$font-color;
-        font-weight: 700;
-    }
-    a{
-        font-size: 17px;
-        margin-top: 10px;
-        display: block;
-        letter-spacing: 1px;
-        color: #be9673;
-    }
-    
 }
 
 .jante__box{
@@ -170,6 +153,31 @@
     background-position: right bottom;
     background-size:85% 90%;;
     background-repeat: no-repeat;
+}
+.section__product__title{
+    font-size:25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.section__product__ex{
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #999;
+    strong{
+        display: block;
+        color:$font-color;
+        font-weight: 700;
+    }
+    a{
+        font-size: 17px;
+        margin-top: 10px;
+        display: block;
+        letter-spacing: 1px;
+        color: #be9673;
+    }
+    
 }
 .stores__ontv__box {
     //width: 90%;
