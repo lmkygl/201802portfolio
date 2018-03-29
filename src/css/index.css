@@ -444,6 +444,14 @@ button:hover {
   color: #999;
   font-size: 15px; }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .section__title {
+    width: 50%; }
+  .section__title__sub_ex {
+    margin: 50px auto;
+    line-height: 22px;
+    width: 90%; } }
+
 .slider__visual__area {
   position: relative;
   overflow: hidden; }
@@ -490,7 +498,7 @@ button:hover {
   .product__link__area .product__link .product__link__box {
     height: 500px;
     width: 90%;
-    margin: 20px auto;
+    margin: 10px auto;
     box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.3); }
 
 .jante__box {
@@ -647,5 +655,50 @@ button:hover {
       overflow-x: hidden; }
       .sns__link__area .grid__inner {
         width: 25% !important; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .product__link__area .product__link .product__link__box {
+    height: 250px;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.3); }
+  .jante__box {
+    background-size: 70% 90%;
+    background-position: bottom right; }
+  .atelier__box {
+    background-size: 70% 90%;
+    background-position: bottom right; }
+  .hygge__box {
+    background-size: 60% 80%;
+    background-position: bottom right; }
+  .platingcook__box {
+    background-size: 60% 80%;
+    background-position: bottom right; }
+  .stores__ontv__box {
+    padding-bottom: 100px; }
+  .square__box {
+    width: 100%;
+    height: 300px;
+    float: none;
+    text-align: center;
+    overflow: hidden; }
+  .rectangle__box {
+    width: 100%;
+    height: 400px;
+    float: none;
+    text-align: center;
+    overflow: hidden; }
+    .rectangle__box .section__sub__title__color {
+      margin-top: 40px; }
+    .rectangle__box .section__sub__btn {
+      margin-top: 50px; }
+      .rectangle__box .section__sub__btn button {
+        width: 25%;
+        border-color: #be9673;
+        color: #be9673;
+        font-weight: 600; }
+        .rectangle__box .section__sub__btn button:hover {
+          background-color: #be9673;
+          border: none; } }
 
 /*# sourceMappingURL=index.css.map */

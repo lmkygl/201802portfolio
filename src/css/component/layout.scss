@@ -4,7 +4,7 @@
     margin: 0 auto;
     @include mobile {
         width: 100%;
-     }
+    }
 }
 
 .full__width {
@@ -38,7 +38,6 @@
     position: relative;
     overflow: hidden;
 }
-
 .section__title {
     font-size: 40px;
     font-weight: 600;
@@ -46,6 +45,7 @@
     width: 20%;
     margin: 50px auto 0;
     position: relative;
+   
     &::after {
         display: block;
         content: "";
@@ -66,6 +66,16 @@
     font-size: 15px;
 }
 
+@include mobile {
+    .section__title {
+        width: 50%;
+    }
+    .section__title__sub_ex{
+        margin: 50px auto;
+        line-height: 22px;
+        width: 90%;
+    }
+}
 .slider__visual__area {
     position: relative;
     overflow: hidden;
@@ -77,16 +87,15 @@
         .slider {
             width: 400%;
             position: absolute;
-            left:0;
-            top:0;
+            left: 0;
+            top: 0;
             li {
                 float: left;
                 width: 25%;
-                img{
-                    width:100%;
+                img {
+                    width: 100%;
                 }
             }
-            
         }
     }
     .prve_btn {
@@ -108,7 +117,6 @@
     background-color: #F5F5F2;
     padding-bottom: 100px;
     overflow: hidden;
-    
     .side_title {
         font-weight: 700;
         font-size: 120px;
@@ -120,67 +128,72 @@
         top: 180px;
     }
     .product__link {
-        
         .product__link__box {
-            height: 500px; 
+            height: 500px;
             width: 90%;
-            margin: 20px auto;
+            margin: 10px auto;
             box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.3);
         }
     }
 }
 
-.jante__box{
+
+.jante__box {
     background-image: url('./../img/product_jante.jpeg');
     background-position: right top;
-    background-size:80% 100%;
+    background-size: 80% 100%;
     background-repeat: no-repeat;
 }
-.atelier__box{
+
+.atelier__box {
     background-image: url('./../img/product_atelier.jpeg');
     background-position: right bottom;
-    background-size:80% 100%;;
+    background-size: 80% 100%;
     background-repeat: no-repeat;
 }
-.hygge__box{
+
+.hygge__box {
     background-image: url('./../img/product_hygge.jpeg');
     background-position: right bottom;
-    background-size:80% 100%;;
+    background-size: 80% 100%;
     background-repeat: no-repeat;
 }
-.platingcook__box{
+
+.platingcook__box {
     background-image: url('./../img/product_platingcook.jpeg');
     background-position: right bottom;
-    background-size:85% 90%;;
+    background-size: 85% 90%;
+    ;
     background-repeat: no-repeat;
 }
-.section__product__title{
-    font-size:25px;
+
+.section__product__title {
+    font-size: 25px;
     margin-top: 30px;
     margin-left: 10px;
 }
-.section__product__ex{
+
+.section__product__ex {
     font-size: 15px;
     line-height: 25px;
     margin-top: 10px;
     margin-left: 10px;
     color: #999;
-    strong{
+    strong {
         display: block;
-        color:$font-color;
+        color: $font-color;
         font-weight: 700;
     }
-    a{
+    a {
         font-size: 17px;
         margin-top: 10px;
         display: block;
         letter-spacing: 1px;
         color: #be9673;
     }
-    
 }
+
 .stores__ontv__box {
-    //width: 90%;
     text-align: center;
     overflow: hidden;
     padding-bottom: 200px;
@@ -225,6 +238,7 @@
 .story__about__area {
     margin-bottom: 117px;
 }
+
 .square__box {
     width: 40%;
     height: 400px;
@@ -239,8 +253,8 @@
     float: left;
     text-align: center;
     overflow: hidden;
-    .section__sub__title__color{
-        margin-top:40px;
+    .section__sub__title__color {
+        margin-top: 40px;
     }
     .section__sub__btn {
         margin-top: 50px;
@@ -251,7 +265,7 @@
             font-weight: 600;
             &:hover {
                 background-color: #be9673;
-                border:none;
+                border: none;
             }
         }
     }
@@ -287,22 +301,20 @@
     margin-top: 140px;
 }
 
-.sns__link__area{
+.sns__link__area {
     // height:220px;
     margin: 0;
-    padding:0;
-    img{
+    padding: 0;
+    img {
         width: 100%;
         height: 100%;
     }
-
-    .sns__img__area{
+    .sns__img__area {
         width: 100%;
         height: 100%;
-        overflow:hidden;
-        a{
+        overflow: hidden;
+        a {
             display: block;
-            
         }
     }
     @include tablet {
@@ -321,3 +333,67 @@
     }
 }
 
+@include mobile {
+    .product__link__area {
+        .product__link {
+            .product__link__box {
+                height: 250px;
+                width: 90%;
+                margin: 20px auto;
+                box-shadow: 1px 1px 2px rgba(100, 100, 100, 0.3);
+            }
+        }
+    }
+    .jante__box{
+        background-size: 70% 90%;
+        background-position: bottom right;
+    }
+    .atelier__box{
+        background-size: 70% 90%;
+        background-position: bottom right;
+    }
+    .hygge__box{
+        background-size: 60% 80%;
+        background-position: bottom right;
+    }
+    .platingcook__box{
+        background-size: 60% 80%;
+        background-position: bottom right;
+    }
+    .stores__ontv__box{
+        padding-bottom: 100px;
+    }
+
+
+    .square__box {
+        width: 100%;
+        height: 300px;
+        float: none;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .rectangle__box {
+        width: 100%;
+        height: 400px;
+        float: none;
+        text-align: center;
+        overflow: hidden;
+        .section__sub__title__color {
+            margin-top: 40px;
+        }
+        .section__sub__btn {
+            margin-top: 50px;
+            button {
+                width: 25%;
+                border-color: #be9673;
+                color: #be9673;
+                font-weight: 600;
+                &:hover {
+                    background-color: #be9673;
+                    border: none;
+                }
+            }
+        }
+    }
+}
