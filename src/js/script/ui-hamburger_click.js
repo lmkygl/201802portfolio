@@ -5,9 +5,7 @@
     var $span__before = $('.span__before');
     var $span__after = $('.span__after');
 
-    TweenMax.to($navi__list__area, 0.2, {
-        left: '-100%'
-    });
+    
 
     function navigation__click(e) {
         var leftVal;
