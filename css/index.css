@@ -310,7 +310,7 @@ button:hover {
     .header .menu__item__area {
       width: 100%;
       top: 90px;
-      left: 0;
+      left: -100%;
       z-index: 2; }
       .header .menu__item__area ul {
         background-color: #fff;
