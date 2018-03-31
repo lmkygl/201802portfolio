@@ -38,6 +38,7 @@
     position: relative;
     overflow: hidden;
 }
+
 .section__title {
     font-size: 40px;
     font-weight: 600;
@@ -45,7 +46,6 @@
     width: 20%;
     margin: 50px auto 0;
     position: relative;
-   
     &::after {
         display: block;
         content: "";
@@ -70,12 +70,13 @@
     .section__title {
         width: 50%;
     }
-    .section__title__sub_ex{
+    .section__title__sub_ex {
         margin: 50px auto;
         line-height: 22px;
         width: 90%;
     }
 }
+
 .slider__visual__area {
     position: relative;
     overflow: hidden;
@@ -136,7 +137,6 @@
         }
     }
 }
-
 
 .jante__box {
     background-image: url('./../img/product_jante.jpeg');
@@ -245,6 +245,18 @@
     float: left;
     text-align: center;
     overflow: hidden;
+   
+}
+
+.rectangle__box {
+    width: 60%;
+    height: 400px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    .section__sub__title__color {
+        margin-top: 40px;
+    }
     .section__sub__btn {
         margin-top: 50px;
         button {
@@ -260,19 +272,8 @@
     }
 }
 
-.rectangle__box {
-    width: 60%;
-    height: 400px;
-    float: left;
-    text-align: center;
-    overflow: hidden;
-    .section__sub__title__color {
-        margin-top: 40px;
-    }
-    
-}
-.moblie__story{
-    display:none;
+.moblie__story {
+    display: none;
 }
 
 .story__img__box1 {
@@ -286,10 +287,10 @@
 }
 
 .story__img__box3 {
-    background-image: url('./../img/story_logo.png');
-   // background-size: cover;
-   background-repeat: no-repeat
-   background-position:top;
+    background-image: url('./../img/story_logo.png'); // background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    background-color:#2E3042;
 }
 
 .section__sub__title__color {
@@ -350,44 +351,36 @@
             }
         }
     }
-    .jante__box{
+    .jante__box {
         background-size: 70% 90%;
         background-position: bottom right;
     }
-    .atelier__box{
+    .atelier__box {
         background-size: 70% 90%;
         background-position: bottom right;
     }
-    .hygge__box{
+    .hygge__box {
         background-size: 60% 80%;
         background-position: bottom right;
     }
-    .platingcook__box{
+    .platingcook__box {
         background-size: 60% 80%;
         background-position: bottom right;
     }
-    .stores__ontv__box{
+    .stores__ontv__box {
         padding-bottom: 100px;
     }
-
-    .story__about__area{
-        margin-bottom: 100px;
+    .story__about__area {
+        margin-bottom: 0;
     }
-
     .square__box {
         width: 100%;
         height: 300px;
         float: none;
         text-align: center;
         overflow: hidden;
-        .section__sub__btn {
-            margin-top: 50px;
-            button {
-                width: 40%;
-            }
-        }
+        
     }
-    
     .rectangle__box {
         width: 100%;
         height: 350px;
@@ -395,9 +388,14 @@
         .section__sub__title__color {
             margin-top: 40px;
         }
-        
+        .section__sub__btn {
+            margin-top: 50px;
+            button {
+                width: 80%;
+            }
+        }
     }
-    .frist__rectangle__box{
+    .frist__rectangle__box {
         height: 380px;
     }
     .section__content__paragraph {
@@ -405,15 +403,15 @@
         margin-top: 10px;
         line-height: 22px;
         width: 80%;
-        margin: 10px auto 0; 
+        margin: 10px auto 0;
     }
     .last__paragraph {
         margin-top: 50px;
     }
-    .desc__story{
-        display:none;
+    .desc__story {
+        display: none;
     }
-    .moblie__story{
+    .moblie__story {
         display: block;
     }
 }
