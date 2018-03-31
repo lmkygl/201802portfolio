@@ -257,7 +257,8 @@ button:hover {
       right: 0;
       height: 2px;
       width: 32px;
-      background-color: #b4b3b3; }
+      background-color: #b4b3b3;
+      z-index: 2; }
     .header .menu__btn__area .span__center {
       top: 45px; }
     .header .menu__btn__area .span__before {
