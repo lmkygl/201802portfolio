@@ -86,7 +86,7 @@
         position: relative;
         .slider {
             width: 400%;
-            height:100%;
+            height: 100%;
             li {
                 float: left;
                 width: 25%;
@@ -243,7 +243,6 @@
     float: left;
     text-align: center;
     overflow: hidden;
-   
 }
 
 .rectangle__box {
@@ -287,8 +286,8 @@
 .story__img__box3 {
     background-image: url('./../img/story_logo.png');
     background-repeat: no-repeat;
-    background-position:top;
-    background-color:#2E3042;
+    background-position: top;
+    background-color: #2E3042;
 }
 
 .section__sub__title__color {
@@ -331,16 +330,14 @@
 }
 
 @include mobile {
-
-.slider__visual__area {
-    .prve_btn {
-        width : 25%;
+    .slider__visual__area {
+        .prve_btn {
+            width: 25%;
+        }
+        .next_btn {
+            width: 25%;
+        }
     }
-    .next_btn {
-        width : 25%;
-    }
-}
-
     .product__link__area {
         .product__link {
             .product__link__box {
@@ -379,7 +376,6 @@
         float: none;
         text-align: center;
         overflow: hidden;
-        
     }
     .rectangle__box {
         width: 100%;
