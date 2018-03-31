@@ -7,48 +7,33 @@
     var interval;
 
     function next_slide_effect(e) {
-        var $inner_frame = $slide__area.find('[data-ui="inner__frames"]');
+        var $ui = $(e.target).parents('[data-ui="slider__area"]');
+        var $inner_frame = $ui.find('[data-ui="inner__frames"]');
+        var $out_width = $ui.find('[data-ui="out__frame"]').width();
         var $scene = $inner_frame.find('.scene');
-        var $out_width = $slide__area.find('[data-ui="out__frame"]').width();
 
-        if (e !== null) {
-            var $target = $(e.target);
-
-            $inner_frame.animate({
-                left: -$out_width
-            }, animation_speed, 'swing', function () {
-                $scene.eq(0).insertAfter($scene.eq(-1));
-                $inner_frame.css('left', 0);
-                animating = false;
-            });
-
-        } else {
-            $inner_frame.animate({
-                left: -$out_width
-            }, animation_speed, 'swing', function () {
-                $scene.eq(0).insertAfter($scene.eq(-1));
-                $inner_frame.css('left', 0);
-                animating = false;
-            });
-
-        }
+        $inner_frame.animate({
+            marginLeft: -$out_width
+        }, animation_speed, 'swing', function () {
+            $scene.eq(0).insertAfter($scene.eq(-1));
+            $inner_frame.css('marginLeft', 0);
+            animating = false;
+        });
     }
 
     function prev_slide_effect(e) {
-        var $target = $(e.target);
-        var $parents = $target.parents('[data-ui="slider__area"]');
-        var $inner_frame = $parents.find('[data-ui="inner__frames"]');
+        var $ui = $(e.target).parents('[data-ui="slider__area"]');
+        var $inner_frame = $ui.find('[data-ui="inner__frames"]');
+        var $out_width = $ui.find('[data-ui="out__frame"]').width();
         var $scene = $inner_frame.find('.scene');
-        var $out_width = $parents.find('[data-ui="out__frame"]').width();
 
-        $inner_frame.css('left', -$out_width);
+        $inner_frame.css('marginLeft', -$out_width);
         $scene.eq(-1).insertBefore($scene.eq(0));
         $inner_frame.animate({
-            left: 0
+            marginLeft: 0
         }, 300, 'swing', function () {
             animating = false;
         });
-
     }
 
     function slide_effect(e) {
@@ -71,7 +56,7 @@
     function startInterval() {
         clearInterval(interval);
         interval = setInterval(function () {
-            next_slide_effect(null);
+            $('.next_btn').trigger('click');
         }, 2000);
     }
 

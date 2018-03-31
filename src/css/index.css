@@ -462,18 +462,18 @@ button:hover {
   .slider__visual__area .slider_visual_wrap {
     overflow: hidden;
     width: 100%;
-    height: 700px;
     position: relative; }
     .slider__visual__area .slider_visual_wrap .slider {
       width: 400%;
-      position: absolute;
+      height: 100%;
       left: 0;
       top: 0; }
       .slider__visual__area .slider_visual_wrap .slider li {
         float: left;
         width: 25%; }
         .slider__visual__area .slider_visual_wrap .slider li img {
-          width: 100%; }
+          width: 100%;
+          height: 100%; }
   .slider__visual__area .prve_btn {
     cursor: pointer;
     position: absolute;
