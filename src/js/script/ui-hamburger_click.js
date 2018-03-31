@@ -10,10 +10,18 @@
     });
 
     function navigation__click(e) {
+        var leftVal;
         $(this).toggleClass('m_hamburgercloseactive');
+
+        if (window.mobile_check) {
+            leftVal = 0
+        } else {
+            leftVal = '5%'
+        }
+
         if ($(this).hasClass('m_hamburgercloseactive')) {
             TweenMax.to($navi__list__area, 0.2, {
-                left: '5%'
+                left: leftVal
             });
             TweenMax.to($span__before, 0.2, {
                 rotation: -45,
@@ -23,7 +31,6 @@
                 rotation: 45,
                 bottom: 47
             });
-
         } else {
             TweenMax.to($navi__list__area, 0.2, {
                 left: '-100%'

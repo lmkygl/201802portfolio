@@ -117,13 +117,7 @@ table {
     width: 9.09091%; }
   .grid.col-12 .grid__inner {
     width: 8.33333%; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .grid {
-      width: 100%;
-      overflow-x: hidden; }
-      .grid .grid__inner {
-        width: 100% !important; } }
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .grid {
       width: 100%;
       overflow-x: hidden; }
@@ -309,7 +303,7 @@ button:hover {
     text-align: right; }
     .header .logo img {
       margin-right: 30px; }
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .header .menu__btn__area {
       width: 20%; }
     .header .menu__item__area {
@@ -377,7 +371,7 @@ button:hover {
     color: #8c8c8c;
     font-weight: 600; }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   address {
     width: 90%; } }
 
@@ -394,7 +388,7 @@ button:hover {
 .max__width {
   width: 1200px;
   margin: 0 auto; }
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .max__width {
       width: 100%; } }
 
@@ -448,7 +442,7 @@ button:hover {
   color: #999;
   font-size: 15px; }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .section__title {
     width: 50%; }
   .section__title__sub_ex {
@@ -652,20 +646,14 @@ button:hover {
     overflow: hidden; }
     .sns__link__area .sns__img__area a {
       display: block; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .sns__link__area {
-      width: 100%;
-      overflow-x: hidden; }
-      .sns__link__area .grid__inner {
-        width: 16.66667% !important; } }
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     .sns__link__area {
       width: 100%;
       overflow-x: hidden; }
       .sns__link__area .grid__inner {
         width: 25% !important; } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .product__link__area .product__link .product__link__box {
     height: 250px;
     width: 90%;

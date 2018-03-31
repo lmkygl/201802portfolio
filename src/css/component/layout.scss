@@ -326,13 +326,13 @@
             display: block;
         }
     }
-    @include tablet {
-        width: 100%;
-        overflow-x: hidden;
-        .grid__inner {
-            width: (100%/6) !important;
-        }
-    }
+    // @include tablet {
+    //     width: 100%;
+    //     overflow-x: hidden;
+    //     .grid__inner {
+    //         width: (100%/6) !important;
+    //     }
+    // }
     @include mobile {
         width: 100%;
         overflow-x: hidden;
