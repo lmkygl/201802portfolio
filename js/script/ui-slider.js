@@ -67,4 +67,11 @@
             startInterval();
         }
     });
+    $slide__area.on('mouseenter mouseleave', function(e){       
+        if (e.type === 'mouseenter') {
+            clearInterval(interval);
+        } else {
+            startInterval();
+        }
+    });
 }());
