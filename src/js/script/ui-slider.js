@@ -67,9 +67,7 @@
             startInterval();
         }
     });
-    $slide__area.on('mouseenter mouseleave', function(e){
-        console.log(e.type);
-        console.log(e.target);        
+    $slide__area.on('mouseenter mouseleave', function(e){       
         if (e.type === 'mouseenter') {
             clearInterval(interval);
         } else {
