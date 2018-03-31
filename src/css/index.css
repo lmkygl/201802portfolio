@@ -318,8 +318,8 @@ button:hover {
       left: 0;
       z-index: 2; }
       .header .menu__item__area ul {
-        background-color: gray;
-        height: 250px; }
+        background-color: #fff;
+        height: 280px; }
         .header .menu__item__area ul .menu__btn__item_list {
           float: left;
           width: 33%; }
