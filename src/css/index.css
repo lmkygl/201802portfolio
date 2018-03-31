@@ -460,9 +460,7 @@ button:hover {
     position: relative; }
     .slider__visual__area .slider_visual_wrap .slider {
       width: 400%;
-      height: 100%;
-      left: 0;
-      top: 0; }
+      height: 100%; }
       .slider__visual__area .slider_visual_wrap .slider li {
         float: left;
         width: 25%; }
@@ -655,6 +653,10 @@ button:hover {
         width: 25% !important; } }
 
 @media (max-width: 767px) {
+  .slider__visual__area .prve_btn {
+    width: 25%; }
+  .slider__visual__area .next_btn {
+    width: 25%; }
   .product__link__area .product__link .product__link__box {
     height: 250px;
     width: 90%;
