@@ -273,14 +273,14 @@ button:hover {
     width: 100%;
     height: 90px;
     position: absolute;
-    left: 5%;
+    left: -100%;
     top: 0; }
     .header .menu__item__area ul {
       width: 100%;
       height: 100%;
       background-color: #fff; }
       .header .menu__item__area ul .menu__btn__item_list {
-        width: 16%;
+        width: 14%;
         float: left;
         line-height: 90px;
         text-align: center; }
@@ -708,5 +708,89 @@ button:hover {
     display: none; }
   .moblie__story {
     display: block; } }
+
+.stroy_bg {
+  background-image: url("./../img/bg_section01.jpg");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  position: relative; }
+
+.stroy__bg2 {
+  background-image: url("./../img/bg_section03.jpg");
+  height: 560px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  position: relative; }
+  .stroy__bg2 .paragraph__wrap {
+    padding-top: 200px; }
+    .stroy__bg2 .paragraph__wrap .color__white {
+      width: 80%;
+      color: #fff; }
+      .stroy__bg2 .paragraph__wrap .color__white::after {
+        background-color: #fff; }
+    .stroy__bg2 .paragraph__wrap .section__title__sub_ex {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -0.5px;
+      width: 100%; }
+
+.paragraph__wrap {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  margin-left: -25%; }
+  .paragraph__wrap .section__story__sub__title {
+    font-size: 22px;
+    color: #1a1a1a;
+    margin: 10px 0; }
+  .paragraph__wrap .story__paragraph {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px; }
+
+.bg__white {
+  background-color: #fff;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.story__img__plating {
+  padding-top: 120px;
+  padding-bottom: 150px;
+  text-align: center; }
+  .story__img__plating .section__title__sub_ex {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 100px;
+    margin-bottom: 40px; }
+
+@media (max-width: 767px) {
+  .stroy__bg2 .paragraph__wrap {
+    padding-top: 150px; }
+    .stroy__bg2 .paragraph__wrap .color__white {
+      width: 85%; }
+    .stroy__bg2 .paragraph__wrap .section__title__sub_ex {
+      font-size: 16px; }
+  .paragraph__wrap {
+    width: 90%;
+    margin-left: -45%; }
+    .paragraph__wrap .section__story__sub__title {
+      font-size: 18px; }
+  .story__img__plating {
+    padding-top: 120px;
+    padding-bottom: 150px;
+    text-align: center; }
+    .story__img__plating img {
+      width: 100%;
+      height: 100%; }
+    .story__img__plating .section__title__sub_ex {
+      font-size: 17px;
+      margin-top: 50px; } }
 
 /*# sourceMappingURL=index.css.map */

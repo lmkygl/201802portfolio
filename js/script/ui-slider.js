@@ -1,7 +1,7 @@
 // arrow 클릭시 슬라이드 
 (function () {
-    var $slide__area = $('[data-ui="slider__area"]');
-    var $btn = $slide__area.find('.btn');
+    var $slide_area = $('[data-ui="slider__area"]');
+    var $btn = $slide_area.find('.btn');
     var animating = false;
     var animation_speed = 500;
     var interval;
@@ -67,7 +67,7 @@
             startInterval();
         }
     });
-    $slide__area.on('mouseenter mouseleave', function(e){       
+    $slide_area.on('mouseenter mouseleave', function(e){       
         if (e.type === 'mouseenter') {
             clearInterval(interval);
         } else {
