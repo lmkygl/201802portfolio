@@ -2,11 +2,11 @@
 (function(){
     var $scale = $('[data-ui="scale"]');
 
-    function mouseover__scale(e){
+    function mouseover_scale(e){
         var $target = $(e.target);
-        var $event__type = e.type;
+        var $event_type = e.type;
         
-        if($event__type === 'mouseenter'){
+        if($event_type === 'mouseenter'){
             TweenMax.to($(this),0.2,{
                 scale: 1.1, 
             });
@@ -16,5 +16,5 @@
             });
         }
     }
-    $scale.on('mouseenter mouseleave', mouseover__scale);
+    $scale.on('mouseenter mouseleave', mouseover_scale);
 }());
