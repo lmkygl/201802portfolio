@@ -450,7 +450,7 @@
     position: absolute;
     left: 50%;
     top: 0px;
-    margin-left: -430px;
+    margin-left: -25%;
     .section__story__sub__title {
         font-size: 22px;
         color: rgb(26, 26, 26);
@@ -485,67 +485,36 @@
     }
 }
 
-@include mobile{
-
+@include mobile {
     .stroy__bg2 {
-        background-image: url('./../img/bg_section03.jpg');
-        height: 560px;
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        position: relative;
         .paragraph__wrap {
-            padding-top: 200px;
-            margin-left: -200px;
+            padding-top: 150px;
             .color__white {
-                width: 80%;
-                color: #fff;
-                &::after {
-                    background-color: #fff;
-                }
+                width: 85%;
             }
             .section__title__sub_ex {
-                margin-top: 30px;
-                font-size: 18px;
-                line-height: 24px;
-                letter-spacing: -0.5px;
-                width: 100%;
+                font-size: 16px;
             }
         }
     }
-    
     .paragraph__wrap {
-        margin-left: -200px;
+        width: 90%;
+        margin-left: -45%;
         .section__story__sub__title {
-            font-size: 22px;
-            color: rgb(26, 26, 26);
-            margin: 10px 0;
-        }
-        .story__paragraph {
-            font-size: 14px;
-            line-height: 25px;
-            margin-top: 20px;
+            font-size: 18px;
         }
     }
-    
-    .bg__white {
-        background-color: #fff;
-        opacity: 0;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
     .story__img__plating {
         padding-top: 120px;
         padding-bottom: 150px;
         text-align: center;
+        img{
+            width: 100%;
+            height: 100%;
+        }
         .section__title__sub_ex {
-            font-size: 20px;
-            line-height: 25px;
-            margin-top: 100px;
-            margin-bottom: 40px;
+            font-size: 17px;
+            margin-top: 50px;
         }
     }
 }
