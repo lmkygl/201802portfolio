@@ -709,4 +709,21 @@ button:hover {
   .moblie__story {
     display: block; } }
 
+.paragraph__wrap {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 0px; }
+
+.stroy_bg {
+  background-image: url("./../img/bg_section01.jpg");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  position: relative; }
+
+.bg__white {
+  background-color: #fff;
+  opacity: 1; }
+
 /*# sourceMappingURL=index.css.map */
