@@ -800,22 +800,19 @@
     }
 }
 
-
-@include mobile{
-
-.news__list {
-    padding-bottom: 100px;
-    .page__representative__area {
-     
-        .page__representative__img {
-           float: none;
-           width: 100%;
-        }
-        .page__representative__text {
-            width: 100%;
-            margin-left: 0;
-            float: none;
+@include mobile {
+    .news__list {
+        padding-bottom: 100px;
+        .page__representative__area {
+            .page__representative__img {
+                float: none;
+                width: 100%;
+            }
+            .page__representative__text {
+                width: 100%;
+                margin-left: 0;
+                float: none;
+            }
         }
     }
-}
 }
