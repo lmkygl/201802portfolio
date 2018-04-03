@@ -411,6 +411,7 @@
         display: block;
     }
 }
+
 // about page css
 .stroy_bg {
     background-image: url('./../img/bg_section01.jpg');
@@ -523,6 +524,21 @@
     }
 }
 
+// cooking book css
+.related__item,
+.cooking__step {
+    padding-top: 100px;
+    .cooking__book__title {
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: -1px;
+    }
+    .list__grid {
+        padding-top: 50px;
+        padding-bottom:100px;
+    }
+}
+
 //공통 레이아웃 platingrecipe cookingbook
 .subpage__title__warp {
     .section__title {
@@ -540,7 +556,6 @@
     .page__representative__img {
         width: 70%;
         float: left;
-        
     }
     .page__representative__text {
         width: 30%;
@@ -550,7 +565,7 @@
             margin-top: 50px;
         }
         .title {
-           // font-weight: 400;
+            // font-weight: 400;
             margin-top: 20px;
         }
         .dsc {
@@ -559,27 +574,59 @@
             margin-top: 30px;
             color: $sub-title-color;
         }
-        .btn__area{
+        .btn__area {
             margin-top: 120px;
+        }
+    }
+    .page__representative__infomation__area {
+        .time__level__serves__area {
+            height: 30px;
+            margin-top: 30px;
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            color: #be9673;
+            font-weight: 700;
+            padding-bottom: 15px;
+            .title {
+                display: inline-block;
+                margin-right: 5px;
+                margin-left: 20px;
+                color: #808080;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        .basic__material {
+            p {
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #666;
+                line-height: 20px;
+            }
+            font-size: 12px;
+            font-weight: 400;
+            color: #999;
+            line-height: 20px;
         }
     }
 }
 
-.list__grid{
+.list__grid {
     padding-top: 150px;
     padding-bottom: 20px;
-    a{
+    a {
         display: block;
         height: 234px;
         overflow: hidden;
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
     }
-    .list__text__area{
+    .list__text__area {
         margin-top: 30px;
-        .date{
+        .date {
             font-size: 15px;
             color: $title-color;
         }
@@ -587,12 +634,39 @@
             font-size: 18px;
             margin-top: 10px;
         }
-        .line__box{
+        .line__box {
             height: 60px;
             font-size: 14px;
             line-height: 22px;
             margin-top: 10px;
             color: $sub-title-color;
+        }
+    }
+    .list__border {
+        border: 1px solid #e6e6e6;
+        text-align: center;
+        font-size: 15px;
+        img {
+            width: 90%;
+            height: 90%;
+        }
+    }
+    .step__img{
+        width: 90%;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .step__text{
+        font-size: 14px;
+        width: 90%;
+        height: 100px;
+        margin-top:20px;
+        line-height: 22px;
+        .date{
+            font-size: 15px;
+            color: $title-color;
         }
     }
     @include mobile {
@@ -604,19 +678,17 @@
     }
 }
 
-
 @include mobile {
     .subpage__title__warp {
         .section__title {
             width: 100%;
         }
     }
-    
     .page__representative__area {
         .page__representative__img {
             width: 100%;
             float: none;
-            img{
+            img {
                 width: 100%;
                 height: 100%;
             }
@@ -635,21 +707,20 @@
                 width: 90%;
                 margin: 20px auto 0;
             }
-            .btn__area{
+            .btn__area {
                 margin-top: 50px;
             }
         }
     }
-
-    .list__grid{
+    .list__grid {
         padding-top: 100px;
         padding-bottom: 40px;
-        a{
+        a {
             height: 200px;
         }
-        .list__text__area{
+        .list__text__area {
             margin-top: 20px;
-            .date{
+            .date {
                 font-size: 14px;
             }
             .title {
@@ -664,7 +735,7 @@
                 height: 20px;
                 line-height: 20px;
             }
-            .line__box{                          
+            .line__box {
                 text-overflow: ellipsis;
                 -o-text-overflow: ellipsis;
                 overflow: hidden;
@@ -675,6 +746,10 @@
                 line-height: 30px;
                 margin-top: 5px;
             }
+        }
+
+        .step__text{
+            height: 250px;
         }
     }
 }
