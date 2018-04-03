@@ -411,7 +411,7 @@
         display: block;
     }
 }
-
+// about page css
 .stroy_bg {
     background-image: url('./../img/bg_section01.jpg');
     height: 800px;
@@ -565,5 +565,40 @@
 }
 
 .list__grid{
-    padding-top: 200px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    a{
+        display: block;
+        height: 234px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .list__text__area{
+        margin-top: 30px;
+        .date{
+            font-size: 15px;
+            color: $title-color;
+        }
+        .title {
+            font-size: 17px;
+            margin-top: 10px;
+        }
+        .line__box{
+            height: 50px;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 10px;
+            color: $sub-title-color;
+        }
+    }
+    @include mobile {
+        width: 100%;
+        overflow-x: hidden;
+        .grid__inner {
+            width: (100%/2) !important;
+        }
+    }
 }

@@ -825,6 +825,34 @@ button:hover {
       margin-top: 120px; }
 
 .list__grid {
-  padding-top: 200px; }
+  padding-top: 150px;
+  padding-bottom: 20px; }
+  .list__grid a {
+    display: block;
+    height: 234px;
+    overflow: hidden; }
+    .list__grid a img {
+      width: 100%;
+      height: 100%; }
+  .list__grid .list__text__area {
+    margin-top: 30px; }
+    .list__grid .list__text__area .date {
+      font-size: 15px;
+      color: #be9673; }
+    .list__grid .list__text__area .title {
+      font-size: 17px;
+      margin-top: 10px; }
+    .list__grid .list__text__area .line__box {
+      height: 50px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
+      color: #999; }
+  @media (max-width: 767px) {
+    .list__grid {
+      width: 100%;
+      overflow-x: hidden; }
+      .list__grid .grid__inner {
+        width: 50% !important; } }
 
 /*# sourceMappingURL=index.css.map */
