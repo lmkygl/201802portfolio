@@ -840,12 +840,12 @@ button:hover {
       font-size: 15px;
       color: #be9673; }
     .list__grid .list__text__area .title {
-      font-size: 17px;
+      font-size: 18px;
       margin-top: 10px; }
     .list__grid .list__text__area .line__box {
-      height: 50px;
+      height: 60px;
       font-size: 14px;
-      line-height: 20px;
+      line-height: 22px;
       margin-top: 10px;
       color: #999; }
   @media (max-width: 767px) {

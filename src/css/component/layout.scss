@@ -540,6 +540,7 @@
     .page__representative__img {
         width: 70%;
         float: left;
+        
     }
     .page__representative__text {
         width: 30%;
@@ -583,13 +584,13 @@
             color: $title-color;
         }
         .title {
-            font-size: 17px;
+            font-size: 18px;
             margin-top: 10px;
         }
         .line__box{
-            height: 50px;
+            height: 60px;
             font-size: 14px;
-            line-height: 20px;
+            line-height: 22px;
             margin-top: 10px;
             color: $sub-title-color;
         }
