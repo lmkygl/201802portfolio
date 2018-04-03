@@ -477,7 +477,7 @@
     padding-top: 120px;
     padding-bottom: 150px;
     text-align: center;
-    img{
+    img {
         width: 100%;
         height: 100%;
     }
@@ -512,7 +512,7 @@
         padding-top: 120px;
         padding-bottom: 150px;
         text-align: center;
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
@@ -521,4 +521,49 @@
             margin-top: 50px;
         }
     }
+}
+
+//공통 레이아웃 platingrecipe cookingbook
+.subpage__title__warp {
+    .section__title {
+        width: 50%;
+        &::after {
+            width: 10%;
+            bottom: -22px;
+            margin-left: -5%;
+        }
+    }
+}
+
+.page__representative__area {
+    overflow: hidden;
+    .page__representative__img {
+        width: 70%;
+        float: left;
+    }
+    .page__representative__text {
+        width: 30%;
+        float: left;
+        .date {
+            color: $title-color;
+            margin-top: 50px;
+        }
+        .title {
+           // font-weight: 400;
+            margin-top: 20px;
+        }
+        .dsc {
+            font-size: 14px;
+            line-height: 25px;
+            margin-top: 30px;
+            color: $sub-title-color;
+        }
+        .btn__area{
+            margin-top: 120px;
+        }
+    }
+}
+
+.list__grid{
+    padding-top: 200px;
 }

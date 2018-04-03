@@ -796,4 +796,35 @@ button:hover {
       font-size: 17px;
       margin-top: 50px; } }
 
+.subpage__title__warp .section__title {
+  width: 50%; }
+  .subpage__title__warp .section__title::after {
+    width: 10%;
+    bottom: -22px;
+    margin-left: -5%; }
+
+.page__representative__area {
+  overflow: hidden; }
+  .page__representative__area .page__representative__img {
+    width: 70%;
+    float: left; }
+  .page__representative__area .page__representative__text {
+    width: 30%;
+    float: left; }
+    .page__representative__area .page__representative__text .date {
+      color: #be9673;
+      margin-top: 50px; }
+    .page__representative__area .page__representative__text .title {
+      margin-top: 20px; }
+    .page__representative__area .page__representative__text .dsc {
+      font-size: 14px;
+      line-height: 25px;
+      margin-top: 30px;
+      color: #999; }
+    .page__representative__area .page__representative__text .btn__area {
+      margin-top: 120px; }
+
+.list__grid {
+  padding-top: 200px; }
+
 /*# sourceMappingURL=index.css.map */
