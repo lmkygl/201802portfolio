@@ -535,7 +535,7 @@
     }
     .list__grid {
         padding-top: 50px;
-        padding-bottom:100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -651,20 +651,20 @@
             height: 90%;
         }
     }
-    .step__img{
+    .step__img {
         width: 90%;
         overflow: hidden;
-        img{
+        img {
             width: 100%;
         }
     }
-    .step__text{
+    .step__text {
         font-size: 14px;
         width: 90%;
         height: 100px;
-        margin-top:20px;
+        margin-top: 20px;
         line-height: 22px;
-        .date{
+        .date {
             font-size: 15px;
             color: $title-color;
         }
@@ -747,8 +747,7 @@
                 margin-top: 5px;
             }
         }
-
-        .step__text{
+        .step__text {
             height: 250px;
         }
     }
