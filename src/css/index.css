@@ -1019,4 +1019,33 @@ button:hover {
       margin-left: 0;
       float: none; } }
 
+.ontv__list .page__representative__area {
+  border: 1px solid #e6e6e6;
+  overflow: hidden; }
+  .ontv__list .page__representative__area .page__representative__img {
+    width: 45%;
+    overflow: hidden;
+    position: relative; }
+    .ontv__list .page__representative__area .page__representative__img .slider__wrap {
+      width: 500%; }
+      .ontv__list .page__representative__area .page__representative__img .slider__wrap .scene {
+        float: left;
+        width: 20%; }
+    .ontv__list .page__representative__area .page__representative__img .slide__control .prve_btn {
+      position: absolute;
+      left: 5%;
+      top: 40%;
+      cursor: pointer; }
+    .ontv__list .page__representative__area .page__representative__img .slide__control .next_btn {
+      position: absolute;
+      right: 5%;
+      top: 40%;
+      cursor: pointer; }
+  .ontv__list .page__representative__area .page__representative__text {
+    width: 55%;
+    overflow: hidden; }
+    .ontv__list .page__representative__area .page__representative__text::after {
+      clear: both;
+      display: block; }
+
 /*# sourceMappingURL=index.css.map */

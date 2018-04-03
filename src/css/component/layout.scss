@@ -818,3 +818,44 @@
 }
 
 // ontv css
+.ontv__list{
+    .page__representative__area{
+        border: 1px solid #e6e6e6;
+        overflow: hidden;
+        .page__representative__img{
+            width: 45%;
+            overflow: hidden;
+            position: relative;
+            .slider__wrap{
+                width: 500%;
+                .scene{
+                    float: left;
+                    width: 20%;
+                }
+            }
+            .slide__control{
+                .prve_btn{
+                    position: absolute;
+                    left: 5%;
+                    top: 40%;
+                    cursor: pointer;
+                }
+                .next_btn{
+                    position: absolute;
+                    right: 5%;
+                    top : 40%;
+                    cursor: pointer;
+                }
+            }
+        }
+        .page__representative__text{
+            width: 55%;
+            overflow:hidden;
+            &::after{
+                clear: both;
+                display:block;
+            }
+        }
+    }
+    
+}
