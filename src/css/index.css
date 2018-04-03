@@ -855,4 +855,57 @@ button:hover {
       .list__grid .grid__inner {
         width: 50% !important; } }
 
+@media (max-width: 767px) {
+  .subpage__title__warp .section__title {
+    width: 100%; }
+  .page__representative__area .page__representative__img {
+    width: 100%;
+    float: none; }
+    .page__representative__area .page__representative__img img {
+      width: 100%;
+      height: 100%; }
+  .page__representative__area .page__representative__text {
+    width: 100%;
+    float: none;
+    text-align: center; }
+    .page__representative__area .page__representative__text .date {
+      margin-top: 20px; }
+    .page__representative__area .page__representative__text .title {
+      margin-top: 20px; }
+    .page__representative__area .page__representative__text .dsc {
+      width: 90%;
+      margin: 20px auto 0; }
+    .page__representative__area .page__representative__text .btn__area {
+      margin-top: 50px; }
+  .list__grid {
+    padding-top: 100px;
+    padding-bottom: 40px; }
+    .list__grid a {
+      height: 200px; }
+    .list__grid .list__text__area {
+      margin-top: 20px; }
+      .list__grid .list__text__area .date {
+        font-size: 14px; }
+      .list__grid .list__text__area .title {
+        font-size: 15px;
+        margin-top: 10px;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        word-wrap: normal !important;
+        display: block;
+        height: 20px;
+        line-height: 20px; }
+      .list__grid .list__text__area .line__box {
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        word-wrap: normal !important;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 5px; } }
+
 /*# sourceMappingURL=index.css.map */
