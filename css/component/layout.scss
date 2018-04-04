@@ -5,6 +5,9 @@
     @include mobile {
         width: 100%;
     }
+    @include tablet {
+        width: 100%;
+    }
 }
 
 .full__width {
@@ -812,6 +815,206 @@
                 width: 100%;
                 margin-left: 0;
                 float: none;
+            }
+        }
+    }
+}
+
+// ontv css
+.ontv__list {
+    position: relative;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    .page__representative__area {
+        border: 1px solid #e6e6e6; // overflow: hidden;
+        //   height: 300px;
+        .page__representative__img {
+            &::after {
+                clear: both;
+                display: block;
+                content: "";
+            }
+            width: 45%;
+            overflow: hidden;
+            position: relative;
+            .slider__wrap {
+                width: 500%;
+                .scene {
+                    float: left;
+                    width: 20%;
+                }
+            }
+            .slide__control {
+                .prve_btn {
+                    position: absolute;
+                    left: 5%;
+                    top: 40%;
+                    cursor: pointer;
+                }
+                .next_btn {
+                    position: absolute;
+                    right: 5%;
+                    top: 40%;
+                    cursor: pointer;
+                }
+            }
+        }
+        .page__representative__text {
+            width: 55%;
+            overflow: hidden;
+            &::after {
+                clear: both;
+                display: block;
+                content: "";
+            }
+            &::before {
+                clear: both;
+                display: block;
+                content: "";
+            }
+            .representative__text__area {
+                margin-left: 20px;
+                .title {
+                    display: -webkit-box;
+                    height: 36px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 36px;
+                }
+                .title__sub__ex {
+                    width: 90%;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #666;
+                    line-height: 20px;
+                    position: relative;
+                }
+                .dsc__ex {
+                    color: #666;
+                    margin-right: 5px;
+                }
+                .btn__area {
+                    margin-top: 20px;
+                    position: relative;
+                    height: 50px;
+                    button {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 50;
+                        border: 1px solid #e6e6e6;
+                        border-width: 1px 0 0 1px;
+                        width: 49px;
+                        height: 49px;
+                        &:hover {
+                            background-color: #fff !important;
+                            color: #666 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sponsorship_product__area {
+        width: 100%;
+        border-top: 1px solid #e6e6e6;
+        box-sizing: border-box;
+        overflow: hidden;
+        bottom: 0;
+        z-index: -50;
+        display: none;
+        .sponsorship__product {
+            text-align: center;
+            img {
+                width: 90%;
+                height: 90%;
+            }
+        }
+        .spon__product__name {
+            color: #666;
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+        .spon__product__metarial {
+            color: #808080;
+            font-size: 14px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        @include mobile {
+            width: 100%;
+            overflow-x: hidden;
+            .grid__inner {
+                width: (100%/2) !important;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .ontv__list {
+        width: 95%;
+        margin: 50px auto 0;
+        position: relative;
+        padding-bottom: 50px;
+        .page__representative__area {
+            .page__representative__img {
+                float: none;
+                width: 100%;
+                position: relative;
+                .slide__control {
+                    .prve_btn {
+                        img {
+                            width: 20px;
+                            height: 30px;
+                        }
+                    }
+                    .next_btn {
+                        img {
+                            width: 20px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+            .page__representative__text {
+                width: 100%;
+                float: none;
+                overflow: hidden;
+                .representative__text__area {
+                    margin-left: 0;
+                    .title {
+                        font-size: 20px;
+                    }
+                    .title__sub__ex {
+                        width: 95%;
+                        margin: 0 auto;
+                        font-size: 13px;
+                    }
+                    .btn__area {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .sponsorship_product__area {
+            .spon__product__name {
+                font-size: 13px;
+            }
+            .spon__product__metarial {
+                font-size: 13px;
             }
         }
     }

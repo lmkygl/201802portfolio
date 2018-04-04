@@ -31,7 +31,7 @@
         $scene.eq(-1).insertBefore($scene.eq(0));
         $inner_frame.animate({
             marginLeft: 0
-        }, 300, 'swing', function () {
+        }, animation_speed, 'swing', function () {
             animating = false;
         });
     }
@@ -56,7 +56,7 @@
     function startInterval() {
         clearInterval(interval);
         interval = setInterval(function () {
-            $('.next_btn').trigger('click');
+            $('.interval__next').trigger('click');
         }, 2000);
     }
 
