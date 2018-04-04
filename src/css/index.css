@@ -1019,78 +1019,111 @@ button:hover {
       margin-left: 0;
       float: none; } }
 
-.ontv__list .page__representative__area {
-  border: 1px solid #e6e6e6;
-  overflow: hidden;
-  height: 300px;
+.ontv__list {
+  position: relative;
   margin-top: 100px; }
-  .ontv__list .page__representative__area .page__representative__img {
-    width: 45%;
+  .ontv__list .page__representative__area {
+    border: 1px solid #e6e6e6;
+    height: 300px; }
+    .ontv__list .page__representative__area .page__representative__img {
+      width: 45%;
+      overflow: hidden;
+      position: relative; }
+      .ontv__list .page__representative__area .page__representative__img::after {
+        clear: both;
+        display: block;
+        content: ""; }
+      .ontv__list .page__representative__area .page__representative__img .slider__wrap {
+        width: 500%; }
+        .ontv__list .page__representative__area .page__representative__img .slider__wrap .scene {
+          float: left;
+          width: 20%; }
+      .ontv__list .page__representative__area .page__representative__img .slide__control .prve_btn {
+        position: absolute;
+        left: 5%;
+        top: 40%;
+        cursor: pointer; }
+      .ontv__list .page__representative__area .page__representative__img .slide__control .next_btn {
+        position: absolute;
+        right: 5%;
+        top: 40%;
+        cursor: pointer; }
+    .ontv__list .page__representative__area .page__representative__text {
+      width: 55%;
+      overflow: hidden; }
+      .ontv__list .page__representative__area .page__representative__text::after {
+        clear: both;
+        display: block;
+        content: ""; }
+      .ontv__list .page__representative__area .page__representative__text::before {
+        clear: both;
+        display: block;
+        content: ""; }
+      .ontv__list .page__representative__area .page__representative__text .representative__text__area {
+        margin-left: 20px; }
+        .ontv__list .page__representative__area .page__representative__text .representative__text__area .title {
+          display: -webkit-box;
+          height: 36px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 36px; }
+        .ontv__list .page__representative__area .page__representative__text .representative__text__area .title__sub__ex {
+          width: 90%;
+          display: -webkit-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          font-size: 14px;
+          font-weight: 400;
+          color: #666;
+          line-height: 20px;
+          position: relative; }
+        .ontv__list .page__representative__area .page__representative__text .representative__text__area .dsc__ex {
+          color: #666;
+          margin-right: 5px; }
+        .ontv__list .page__representative__area .page__representative__text .representative__text__area .btn__area {
+          margin-top: 20px;
+          position: relative;
+          height: 50px; }
+          .ontv__list .page__representative__area .page__representative__text .representative__text__area .btn__area button {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 50;
+            border: 1px solid #e6e6e6;
+            border-width: 1px 0 0 1px;
+            width: 49px;
+            height: 49px; }
+            .ontv__list .page__representative__area .page__representative__text .representative__text__area .btn__area button:hover {
+              background-color: #fff !important;
+              color: #666 !important; }
+  .ontv__list .sponsorship_product__area {
+    width: 100%;
+    height: 280px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    border-top: none;
     overflow: hidden;
-    position: relative; }
-    .ontv__list .page__representative__area .page__representative__img .slider__wrap {
-      width: 500%; }
-      .ontv__list .page__representative__area .page__representative__img .slider__wrap .scene {
-        float: left;
-        width: 20%; }
-    .ontv__list .page__representative__area .page__representative__img .slide__control .prve_btn {
-      position: absolute;
-      left: 5%;
-      top: 40%;
-      cursor: pointer; }
-    .ontv__list .page__representative__area .page__representative__img .slide__control .next_btn {
-      position: absolute;
-      right: 5%;
-      top: 40%;
-      cursor: pointer; }
-  .ontv__list .page__representative__area .page__representative__text {
-    width: 55%;
-    overflow: hidden; }
-    .ontv__list .page__representative__area .page__representative__text::after {
-      clear: both;
-      display: block; }
-    .ontv__list .page__representative__area .page__representative__text .representative__text__area {
-      margin-left: 20px; }
-      .ontv__list .page__representative__area .page__representative__text .representative__text__area .title {
-        display: -webkit-box;
-        height: 36px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 36px; }
-      .ontv__list .page__representative__area .page__representative__text .representative__text__area .title__sub__ex {
+    z-index: -50; }
+    .ontv__list .sponsorship_product__area .sponsorship__product {
+      text-align: center; }
+      .ontv__list .sponsorship_product__area .sponsorship__product img {
         width: 90%;
-        display: -webkit-box;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        font-size: 14px;
-        font-weight: 400;
-        color: #666;
-        line-height: 20px;
-        position: relative; }
-      .ontv__list .page__representative__area .page__representative__text .representative__text__area .dsc__ex {
-        color: #666;
-        margin-right: 5px; }
-      .ontv__list .page__representative__area .page__representative__text .representative__text__area .btn__area {
-        margin-top: 20px;
-        position: relative;
-        height: 50px; }
-        .ontv__list .page__representative__area .page__representative__text .representative__text__area .btn__area button {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          z-index: 50;
-          border: 1px solid #e6e6e6;
-          border-width: 1px 0 0 1px;
-          width: 49px;
-          height: 49px; }
-          .ontv__list .page__representative__area .page__representative__text .representative__text__area .btn__area button:hover {
-            background-color: #fff !important;
-            color: #666 !important; }
+        height: 90%; }
+    .ontv__list .sponsorship_product__area .spon__product__name {
+      color: #666;
+      text-align: center;
+      width: 90%;
+      margin: 0 auto; }
+    .ontv__list .sponsorship_product__area .spon__product__metarial {
+      color: #808080;
+      font-size: 15px;
+      margin-top: 10px;
+      text-align: center; }
 
 /*# sourceMappingURL=index.css.map */
