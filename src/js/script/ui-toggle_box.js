@@ -3,6 +3,7 @@
     var $button = $('[data-ui-btn="toggle_box"]').find('.toggle__btn');
     var toggled = false;
     var animating = false;
+    var speed = 0.2;
 
     function toggle_effect(e) {
         var $target = $(e.target);
@@ -14,13 +15,14 @@
                 animating = true;
                 if (!toggled) {
                     toggled = true;
-                    $sponsorship_box.animate({
-                        "height": "720px",
-                        'border-Bottom': 'none'
-                    });
+                    // $sponsorship_box.animate({
+                    //     "height": "100%",
+                    //     'border-Bottom': 'none'
+                    // });
                     $product_area.animate({
                         'opacity': '1',
-                    });
+                        'height':'100%'
+                    }, speed);
                     $target.text("▲");
                     return;
                 }
@@ -31,11 +33,12 @@
                 if (toggled) {
                     toggled = false;
                     $sponsorship_box.animate({
-                        "height": "530px"
-                    });
+                        "height": "100%"
+                    },speed);
                     $product_area.animate({
                         "opacity": "0",
-                    });
+                        "height":"0"
+                    },speed);
                     $target.text("▼");
                     return;
                 }
@@ -47,8 +50,7 @@
                 if (!toggled) {
                     toggled = true;
                     $sponsorship_box.animate({
-                        "height": "530px",
-                        'border-Bottom': 'none'
+                        "height": "100%",
                     });
                     $product_area.animate({
                         'opacity': '1',
@@ -62,9 +64,9 @@
     
                 if (toggled) {
                     toggled = false;
-                    $sponsorship_box.animate({
-                        "height": "300px"
-                    });
+                    // $sponsorship_box.animate({
+                    //     "height": "300px"
+                    // });
                     $product_area.animate({
                         "opacity": "0",
                     });

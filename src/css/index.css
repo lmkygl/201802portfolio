@@ -191,7 +191,8 @@ body, html {
   color: #0D364C;
   width: 100%;
   height: 100%;
-  font-family: 'Noto Sans KR', sans-serif; }
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-x: hidden; }
 
 a {
   color: #425866;
@@ -1024,8 +1025,7 @@ button:hover {
   margin-top: 50px;
   padding-bottom: 50px; }
   .ontv__list .page__representative__area {
-    border: 1px solid #e6e6e6;
-    height: 300px; }
+    border: 1px solid #e6e6e6; }
     .ontv__list .page__representative__area .page__representative__img {
       width: 45%;
       overflow: hidden;
@@ -1105,14 +1105,13 @@ button:hover {
               color: #666 !important; }
   .ontv__list .sponsorship_product__area {
     width: 100%;
-    height: 280px;
+    height: 0;
     border: 1px solid #e6e6e6;
     box-sizing: border-box;
     border-top: none;
     overflow: hidden;
     bottom: 0;
     opacity: 0;
-    position: absolute;
     transition: height 1s;
     z-index: -50; }
     .ontv__list .sponsorship_product__area .sponsorship__product {
@@ -1143,32 +1142,30 @@ button:hover {
     position: relative;
     margin-top: 50px;
     padding-bottom: 50px; }
-    .ontv__list .page__representative__area {
-      height: 480px; }
-      .ontv__list .page__representative__area .page__representative__img {
-        float: none;
-        width: 100%;
-        position: relative; }
-        .ontv__list .page__representative__area .page__representative__img .slide__control .prve_btn img {
-          width: 20px;
-          height: 30px; }
-        .ontv__list .page__representative__area .page__representative__img .slide__control .next_btn img {
-          width: 20px;
-          height: 30px; }
-      .ontv__list .page__representative__area .page__representative__text {
-        width: 100%;
-        float: none;
-        overflow: hidden; }
-        .ontv__list .page__representative__area .page__representative__text .representative__text__area {
-          margin-left: 0; }
-          .ontv__list .page__representative__area .page__representative__text .representative__text__area .title {
-            font-size: 20px; }
-          .ontv__list .page__representative__area .page__representative__text .representative__text__area .title__sub__ex {
-            width: 95%;
-            margin: 0 auto;
-            font-size: 13px; }
-          .ontv__list .page__representative__area .page__representative__text .representative__text__area .btn__area {
-            margin-top: 10px; }
+    .ontv__list .page__representative__area .page__representative__img {
+      float: none;
+      width: 100%;
+      position: relative; }
+      .ontv__list .page__representative__area .page__representative__img .slide__control .prve_btn img {
+        width: 20px;
+        height: 30px; }
+      .ontv__list .page__representative__area .page__representative__img .slide__control .next_btn img {
+        width: 20px;
+        height: 30px; }
+    .ontv__list .page__representative__area .page__representative__text {
+      width: 100%;
+      float: none;
+      overflow: hidden; }
+      .ontv__list .page__representative__area .page__representative__text .representative__text__area {
+        margin-left: 0; }
+        .ontv__list .page__representative__area .page__representative__text .representative__text__area .title {
+          font-size: 20px; }
+        .ontv__list .page__representative__area .page__representative__text .representative__text__area .title__sub__ex {
+          width: 95%;
+          margin: 0 auto;
+          font-size: 13px; }
+        .ontv__list .page__representative__area .page__representative__text .representative__text__area .btn__area {
+          margin-top: 10px; }
     .ontv__list .sponsorship_product__area .spon__product__name {
       font-size: 13px; }
     .ontv__list .sponsorship_product__area .spon__product__metarial {
