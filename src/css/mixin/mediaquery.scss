@@ -20,7 +20,7 @@ $mobile-width:320px;
   }
 }
 @mixin tablet {
-  @media (max-width: #{$desktop-width - 1px}) {
+  @media (max-width: #{$desktop-max - 1px}) {
     @content;
   }
 }
