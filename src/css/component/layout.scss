@@ -953,5 +953,70 @@
             margin-top: 5px;
             text-align: center;
         }
+        @include mobile {
+            width: 100%;
+            overflow-x: hidden;
+            .grid__inner {
+                width: (100%/2) !important;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .ontv__list {
+        position: relative;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        .page__representative__area {
+            height: 480px;
+            .page__representative__img {
+                float: none;
+                width: 100%;
+                position: relative;
+                .slide__control {
+                    .prve_btn {
+                        img {
+                            width: 20px;
+                            height: 30px;
+                        }
+                    }
+                    .next_btn {
+                        img {
+                            width: 20px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+            .page__representative__text {
+                width: 100%;
+                float: none;
+                overflow: hidden;
+                .representative__text__area {
+                    margin-left: 0;
+                    .title {
+                        font-size: 20px;
+                    }
+                    .title__sub__ex {
+                        width: 95%;
+                        margin: 0 auto;
+                        font-size: 13px;
+                    }
+                    .btn__area {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .sponsorship_product__area {
+            
+            .spon__product__name {
+                font-size: 13px;
+            }
+            .spon__product__metarial {
+                font-size: 13px;
+            }
+        }
     }
 }

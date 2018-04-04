@@ -8,39 +8,75 @@
         var $target = $(e.target);
         var $sponsorship_box = $(e.target).parents('[data-ui-btn="toggle_box"]');
         var $product_area = $sponsorship_box.find('[data-ui="sponsorship_product_area"]');
-        if (!animating) {
-            animating = true;
-            if (!toggled) {
-                toggled = true;
-                $sponsorship_box.animate({
-                    "height": "530px",
-                    'border-Bottom': 'none'
-                });
-                $product_area.animate({
-                    'opacity': '1',
-                });
-                $target.text("▲");
-                return;
+
+        if (window.mobile_check) {
+            if (!animating) {
+                animating = true;
+                if (!toggled) {
+                    toggled = true;
+                    $sponsorship_box.animate({
+                        "height": "720px",
+                        'border-Bottom': 'none'
+                    });
+                    $product_area.animate({
+                        'opacity': '1',
+                    });
+                    $target.text("▲");
+                    return;
+                }
+            }
+            if (animating) {
+                animating = false;
+    
+                if (toggled) {
+                    toggled = false;
+                    $sponsorship_box.animate({
+                        "height": "530px"
+                    });
+                    $product_area.animate({
+                        "opacity": "0",
+                    });
+                    $target.text("▼");
+                    return;
+                }
+            }
+
+        } else {
+            if (!animating) {
+                animating = true;
+                if (!toggled) {
+                    toggled = true;
+                    $sponsorship_box.animate({
+                        "height": "530px",
+                        'border-Bottom': 'none'
+                    });
+                    $product_area.animate({
+                        'opacity': '1',
+                    });
+                    $target.text("▲");
+                    return;
+                }
+            }
+            if (animating) {
+                animating = false;
+    
+                if (toggled) {
+                    toggled = false;
+                    $sponsorship_box.animate({
+                        "height": "300px"
+                    });
+                    $product_area.animate({
+                        "opacity": "0",
+                    });
+                    $target.text("▼");
+                    return;
+                }
             }
         }
-        if (animating) {
-            animating = false;
 
-            if (toggled) {
-                toggled = false;
-                $sponsorship_box.animate({
-                    "height": "300px"
-                });
-                $product_area.animate({
-                    "opacity": "0",
-                    'top': '0'
-                });
-                $target.text("▼");
-                return;
-            }
-        }
+        
 
-
+       
     }
 
     $button.on('click', toggle_effect);
