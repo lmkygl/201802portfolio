@@ -19,6 +19,11 @@ $mobile-width:320px;
     @content;
   }
 }
+@mixin tablet {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
 
 @mixin limDesktop {
   @media (min-width: #{$desktop-max}) {

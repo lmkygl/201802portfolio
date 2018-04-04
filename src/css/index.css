@@ -393,6 +393,9 @@ button:hover {
   @media (max-width: 767px) {
     .max__width {
       width: 100%; } }
+  @media (max-width: 1023px) {
+    .max__width {
+      width: 100%; } }
 
 .full__width {
   width: 100%; }
