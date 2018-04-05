@@ -1229,10 +1229,10 @@ button:hover {
     border-right: 1px solid #e6e6e6; }
   .offline__store .store__title__sub {
     display: inline-block; }
-  .offline__store form {
+  .offline__store .search_wrap {
     display: inline-block;
     margin-left: 30px; }
-    .offline__store form .ipt__search {
+    .offline__store .search_wrap .ipt__search {
       width: 260px;
       height: 30px;
       padding-left: 20px;
@@ -1245,7 +1245,7 @@ button:hover {
       vertical-align: top;
       letter-spacing: -0.25px;
       vertical-align: middle; }
-    .offline__store form .btn_search {
+    .offline__store .search_wrap .btn_search {
       display: inline-block;
       width: 90px;
       height: 30px;
@@ -1285,15 +1285,15 @@ button:hover {
   .store__list {
     width: 99%;
     margin: 16px auto 0; }
-  .offline__store form {
+  .offline__store .search_wrap {
     display: inline-block;
     margin-left: 0px; }
-    .offline__store form .ipt__search {
+    .offline__store .search_wrap .ipt__search {
       width: 200px;
       height: 30px;
       padding-left: 10px;
       letter-spacing: -0.2px; }
-    .offline__store form .btn_search {
+    .offline__store .search_wrap .btn_search {
       width: 80px;
       margin-left: 5px; } }
 

@@ -1085,7 +1085,7 @@
     .store__title__sub {
         display: inline-block;
     }
-    form {
+    .search_wrap {
         display: inline-block;
         margin-left: 30px;
         .ipt__search {
@@ -1154,7 +1154,7 @@
         
     }
     .offline__store {
-        form {
+        .search_wrap {
             display: inline-block;
             margin-left: 0px;
             .ipt__search {

@@ -176,10 +176,13 @@
                     <div class="offline__store">
                         <div class="offline__store__search">
                             <h4 class="store__title__sub">오프라인 스토어 </h4>
-                            <form>
-                                <input type="text" id="searchText" class="ipt__search" data-ui="search__text" placeholder="매장명, 주소를 입력해주세요" />
-                                <button id="stores__search__btn" class="btn btn_search" data-ui="search__btn">search</button>
-                            </form>
+                            <div class="search_wrap">
+                                <label for="searchText">
+                                    <input type="text" id="searchText" name="searchText" class="ipt__search" 
+                                    data-ui="search__text" placeholder="매장명, 주소를 입력하세요">
+                                </label>
+                                <button id="stores__search__btn" class="btn btn_search" data-ui="search__btn">Search</button>
+                            </div>
                             <div class="grid col-2 nospacing store__list offline__list">
                                 <ul class="grid__row">
                                     <li class="grid__inner">
