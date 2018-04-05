@@ -1101,6 +1101,9 @@
             vertical-align: top;
             letter-spacing: -0.25px;
             vertical-align: middle;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            // appearance: none;
         }
         .btn_search {
             display: inline-block;
@@ -1149,9 +1152,8 @@
         }
     }
     .store__list {
-        width:99%;
+        width: 99%;
         margin: 16px auto 0;
-        
     }
     .offline__store {
         .search_wrap {

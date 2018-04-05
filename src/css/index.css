@@ -1244,7 +1244,9 @@ button:hover {
       font-size: 12px;
       vertical-align: top;
       letter-spacing: -0.25px;
-      vertical-align: middle; }
+      vertical-align: middle;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
     .offline__store .search_wrap .btn_search {
       display: inline-block;
       width: 90px;
