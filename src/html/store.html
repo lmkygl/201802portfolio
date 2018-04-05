@@ -87,9 +87,9 @@
                         <img src="../img/img_stores.png" alt="store__img" />
                     </div>
                     <div class="online__store">
-                        <h4>온라인 스토어</h4>
-                        <p>오덴세의 제품을 온라인스토어에서 만나보세요</p>
-                        <div class="grid col-4 nospacing">
+                        <h4 class="store__title__sub">온라인 스토어</h4>
+                        <p class="store__title__sub__ex">오덴세의 제품을 온라인스토어에서 만나보세요</p>
+                        <div class="grid col-4 nospacing store__list">
                             <ul class="grid__row">
                                 <li class="grid__inner">
                                     <div class="grid__inner__item">
@@ -175,240 +175,234 @@
                     </div>
                     <div class="offline__store">
                         <div class="offline__store__search">
-                            <h4>오프라인 스토어 </h4>
+                            <h4 class="store__title__sub">오프라인 스토어 </h4>
                             <form>
-                                <input type="text" placeholder="매장명, 주소를 입력해주세요" />
-                                <button>search</button>
+                                <input type="text" id="searchText" class="ipt__search" data-ui="search__text" placeholder="매장명, 주소를 입력해주세요" />
+                                <button id="stores__search__btn" class="btn btn_search" data-ui="search_btn">search</button>
                             </form>
-                            <div class="grid col-2 nospacing">
+                            <div class="grid col-2 nospacing store__list">
                                 <ul class="grid__row">
-                                    <div class="li grid__inner">
+                                    <li class="grid__inner">
                                         <div class="grid__inner__item border__line">
                                             <div class="store__addres">
-                                                <div class="store__addres">
-                                                    <h3>[서울] 롯데백화점 건대스타시티점</h3>
-                                                    <p>
-                                                        서울 광진구 능동로 92 롯데백화점 건대스타시티점 9층 02-2218-2500
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 20:00
+                                                <h3>[서울] 롯데백화점 건대스타시티점</h3>
+                                                <p>
+                                                    서울 광진구 능동로 92 롯데백화점 건대스타시티점 9층 02-2218-2500
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 - 20:00
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[서울] 롯데백화점 잠실점</h3>
-                                                    <p>
-                                                        서울 송파구 올림픽로 240 롯데백화점 잠실점 10층 02-2143-1863
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 20:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[서울] 롯데백화점 미아점</h3>
+                                                <p>
+                                                    서울 강북구 도봉로 62 롯데백화점 미아점 8층 02-944-2880
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 - 20:00
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[서울] 롯데백화점 미아점</h3>
-                                                    <p>
-                                                        서울 강북구 도봉로 62 롯데백화점 미아점 8층 02-944-2880
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 20:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[서울] 한샘 플래그샵 잠실점</h3>
+                                                <p>
+                                                    서울 송파구 백제고분로 217 한샘 잠실 전시장 02-3430-6900
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 - 21:00
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[서울] 한샘 플래그샵 잠실점</h3>
-                                                    <p>
-                                                        서울 송파구 백제고분로 217 한샘 잠실 전시장 02-3430-6900
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 21:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[서울] 한샘 플래그샵 논현점</h3>
+                                                <p>
+                                                    서울 강남구 학동로 148 인성빌딩 02-542-8558
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 - 21:00
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[서울] 한샘 플래그샵 논현점</h3>
-                                                    <p>
-                                                        서울 강남구 학동로 148 인성빌딩 02-542-8558
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 21:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[서울] 한샘 플래그샵 상봉점</h3>
+                                                <p>
+                                                    서울 중랑구 상봉로 131 듀오트리스 3층 02-6244-5000
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 - 21:00 (연중무휴 / 추석, 설 당일 제외)
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[서울] 한샘 플래그샵 상봉점</h3>
-                                                    <p>
-                                                        서울 중랑구 상봉로 131 듀오트리스 3층 02-6244-5000
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 21:00 (연중무휴 / 추석, 설 당일 제외)
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[서울] 한샘 플래그샵 목동점</h3>
+                                                <p>
+                                                    서울 강서구 등촌로 11 원종빌딩 02-6344-7000
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 - 21:00
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[서울] 한샘 플래그샵 목동점</h3>
-                                                    <p>
-                                                        서울 강서구 등촌로 11 원종빌딩 02-6344-7000
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 21:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[경기] 한샘 플래그샵 분당점</h3>
+                                                <p>
+                                                    경기 성남시 분당구 황새울로200번길 9-7 판테온오피스텔 2층 031-719-3100
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 ~ 21:00
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[경기] 한샘 플래그샵 분당점</h3>
-                                                    <p>
-                                                        경기 성남시 분당구 황새울로200번길 9-7 판테온오피스텔 2층 031-719-3100
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 ~ 21:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[경기] 한샘 플래그샵 수원광교점</h3>
+                                                <p>
+                                                    경기 수원시 영통구 중부대로 390 031-888-0800
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 - 21:00
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[경기] 한샘 플래그샵 수원광교점</h3>
-                                                    <p>
-                                                        경기 수원시 영통구 중부대로 390 031-888-0800
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 21:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[경기] AK 수원점</h3>
+                                                <p>
+                                                    경기 수원시 팔달구 덕영대로 924 M층 스타일온에어 031-240-1195
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 ~ 20:00(월~목) 10:30 ~ 20:30(금~일)
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[경기] AK 수원점</h3>
-                                                    <p>
-                                                        경기 수원시 팔달구 덕영대로 924 M층 스타일온에어 031-240-1195
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 ~ 20:00(월~목) 10:30 ~ 20:30(금~일)
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[경기] 신세계 사이먼 여주점</h3>
+                                                <p>
+                                                    경기 여주시 상거동 460 (명품로 360) 여주프리미엄아울렛 705호 스타일온에어 031-8087-2627
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 ~ 20:30(월~목) 10:30 ~ 21:00(금~일, 공휴일) 5~10월 매일 21:00 까지 운영
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[경기] 신세계 사이먼 여주점</h3>
-                                                    <p>
-                                                        경기 여주시 상거동 460 (명품로 360) 여주프리미엄아울렛 705호 스타일온에어 031-8087-2627
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 ~ 20:30(월~목) 10:30 ~ 21:00(금~일, 공휴일) 5~10월 매일 21:00 까지 운영
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[경기] 신세계 사이먼 파주점</h3>
+                                                <p>
+                                                    경기 파주시 탄현면 필승로 200 파주프리미엄아울렛 215호 스타일온에어 031-8071-7308
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 ~ 20:30(월~목) 10:30 ~ 21:00(금~일, 공휴일) 5~10월 매일 21:00 까지 운영
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[경기] 신세계 사이먼 파주점</h3>
-                                                    <p>
-                                                        경기 파주시 탄현면 필승로 200 파주프리미엄아울렛 215호 스타일온에어 031-8071-7308
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 ~ 20:30(월~목) 10:30 ~ 21:00(금~일, 공휴일) 5~10월 매일 21:00 까지 운영
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[인천] 인천 스퀘어원</h3>
+                                                <p>
+                                                    인천 연수구 청능대로 210 스퀘어원 3층 스타일온에어 032-456-4351
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 ~ 22:00
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[인천] 인천 스퀘어원</h3>
-                                                    <p>
-                                                        인천 연수구 청능대로 210 스퀘어원 3층 스타일온에어 032-456-4351
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 ~ 22:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[대구] 한샘플래그샵 대구범어점</h3>
+                                                <p>
+                                                    대구 수성구 달구벌대로 2435 범어동, 두산위브더제니스 1층 053-749-8500
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                10:30 - 20:00
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[대구] 한샘플래그샵 대구범어점</h3>
-                                                    <p>
-                                                        대구 수성구 달구벌대로 2435 범어동, 두산위브더제니스 1층 053-749-8500
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 20:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line">
+                                            <div class="store__addres">
+                                                <h3>[부산] 롯데백화점 광복점</h3>
+                                                <p>
+                                                    부산 중구 중앙대로 2 롯데백화점 광복점 본관 9층 051-678-3060
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                <span>10:30 ~ 20:00 (월~목)</span>
+                                                <span> 10:30 ~ 21:00 (금~일)</span>
+
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[부산] 롯데백화점 광복점</h3>
-                                                    <p>
-                                                        부산 중구 중앙대로 2 롯데백화점 광복점 본관 9층 051-678-3060
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 ~ 20:00 (월~목) 10:30 ~ 21:00 (금~일)
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line last__border__line">
+                                            <div class="store__addres">
+                                                <h3>[부산] 신세계 사이먼 부산점</h3>
+                                                <p>
+                                                    부산 기장군 장안읍 정관로 1133 부산프리미엄아울렛 352호 스타일온에어 051-940-1352
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                <span>10:30 ~ 20:30(월~목)</span>
+                                                <spna>10:30 ~ 21:00(금~일, 공휴일)</spna>
+                                                <span>5~10월 매일 21:00 까지 운영</span>
+
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[서울] 한샘 플래그샵 논현점</h3>
-                                                    <p>
-                                                        서울 강남구 학동로 148 인성빌딩 02-542-8558
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 - 21:00
+                                    </li>
+                                    <li class="grid__inner">
+                                        <div class="grid__inner__item border__line last__border__line">
+                                            <div class="store__addres">
+                                                <h3>[부산] 신세계 사이먼 부산점</h3>
+                                                <p>
+                                                    부산 기장군 장안읍 정관로 1133 부산프리미엄아울렛 352호 스타일온에어 051-940-1352
                                                 </p>
                                             </div>
+                                            <p class="store__time">
+                                                <span>10:30 ~ 20:30(월~목)</span>
+                                                <spna>10:30 ~ 21:00(금~일, 공휴일)</spna>
+                                                <span>5~10월 매일 21:00 까지 운영</span>
+
+                                            </p>
                                         </div>
-                                        <div class="li grid__inner">
-                                            <div class="grid__inner__item border__line">
-                                                <div class="store__addres">
-                                                    <h3>[부산] 신세계 사이먼 부산점</h3>
-                                                    <p>
-                                                        부산 기장군 장안읍 정관로 1133 부산프리미엄아울렛 352호 스타일온에어 051-940-1352
-                                                    </p>
-                                                </div>
-                                                <p class="store__time">
-                                                    10:30 ~ 20:30(월~목) 10:30 ~ 21:00(금~일, 공휴일) 5~10월 매일 21:00 까지 운영
-                                                </p>
-                                            </div>
-                                        </div>
+                                    </li>
                                 </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
             <footer id="footer" class="footer">
                 <div class="max__width">
@@ -445,8 +439,8 @@
                     </div>
                 </div>
             </footer>
-            </div>
-            <script src="../js/client.js"></script>
+        </div>
+        <script src="../js/client.js"></script>
 </body>
 
 </html>
