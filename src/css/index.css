@@ -1339,8 +1339,8 @@ button:hover {
     border-right: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6; }
   .pannel__list .list__img img {
-    width: 90%;
-    height: 90%; }
+    width: 85%;
+    height: 85%; }
   .pannel__list .list__title {
     font-size: 15px; }
   .pannel__list .list__metarial {
@@ -1357,5 +1357,10 @@ button:hover {
         .pannel__list .grid__inner img {
           width: 100%;
           height: 100%; } }
+
+@media (max-width: 767px) {
+  .tab__btn__wrap, .pannel__list__wrap {
+    width: 95%;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=index.css.map */
