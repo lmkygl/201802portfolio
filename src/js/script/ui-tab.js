@@ -3,6 +3,7 @@
     var $tab_btn_wrap = $('[data-ui="tab_button_wrap"]');
     var $this_tab_btn = $tab_btn_wrap.find('.icon__sort__wrap');
     var $pannel = $('.pannel__list__wrap').find('.pannel__list');
+
     
 
     function tab_button(e) {
