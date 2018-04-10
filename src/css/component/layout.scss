@@ -1329,12 +1329,34 @@
     }
     .product__detail {
         width: 90%;
-        margin: 0 auto 0;
+        margin: 0 auto;
         .section__title {
-            width: 50%;
-            font-size: 23px;
+            width: 40%;
+            font-size: 25px;
             color: #666;
-            margin-top: 20px;
+            margin-top: 50px;
         }
+        .section__title__sub_ex{
+            line-height: 25px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .shop__link {
+            text-align: center;
+            a {
+                display: inline-block;
+                padding: 10px 15px;
+                border: 1px solid #cccccc;
+                color: #808080;
+            }
+        }
+    }
+}
+
+.product__sub__text__wrap{
+    .text__tab__btn{
+        width: 40%;
+        border-bottom: 1px solid #666;
+        
     }
 }
