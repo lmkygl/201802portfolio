@@ -1329,7 +1329,7 @@
     }
     .product__detail {
         width: 90%;
-        margin: 0 auto;
+        margin: 100px auto 0;
         .section__title {
             width: 40%;
             font-size: 25px;
@@ -1343,6 +1343,7 @@
         }
         .shop__link {
             text-align: center;
+            margin-top: 50px;
             a {
                 display: inline-block;
                 padding: 10px 15px;
@@ -1389,6 +1390,8 @@
         }
         .btn_content_txt{
             margin-top: 10px;
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 }
