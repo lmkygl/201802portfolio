@@ -2,7 +2,7 @@
 (function(){
     var $data_tab_id = $('[data-id]');
     var $tab_wrap = $('[data-ui="tab_button_wrap"]');
-    var $tab_btn = $tab_wrap.find('span');
+    var $tab_btn = $tab_wrap.find('.btn');
     var speed = 200;
 
     function tab_button(e) {
