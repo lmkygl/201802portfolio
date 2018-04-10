@@ -1295,4 +1295,46 @@
 }
 
 //product sub css
-
+.indecator__slide__wrap {
+    .slide__wrap {
+        overflow: hidden;
+        position: relative;
+        height: 400px;
+        .slider {
+            width: 300%;
+            .scene {
+                float: left;
+                width: 33.3%;
+            }
+        }
+    }
+    .side_slide_control {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        font-size: 0;
+        span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            margin: 0 8px;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        .select_indicator {
+            opacity: 1;
+        }
+    }
+    .product__detail {
+        width: 90%;
+        margin: 0 auto 0;
+        .section__title {
+            width: 50%;
+            font-size: 23px;
+            color: #666;
+            margin-top: 20px;
+        }
+    }
+}
