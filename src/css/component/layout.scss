@@ -1354,9 +1354,27 @@
 }
 
 .product__sub__text__wrap{
+    margin-top: 100px;
     .text__tab__btn{
-        width: 40%;
-        border-bottom: 1px solid #666;
-        
+        width: 50%;
+        border-bottom: 1px solid #ccc;
+        margin-top: 20px;
+        span {
+            font-size: 15px;
+            cursor: pointer;
+            display: inline-block;
+            color: #ccc;
+            border-right: 1px solid #ccc;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            text-align: center;
+        }
+        .select__tab{
+            color:$font-color;
+        }
+        .last{
+            border:none;
+        }
     }
 }
