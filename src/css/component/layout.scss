@@ -1286,19 +1286,6 @@
     }
 }
 
-// .scroll__top{
-//     position: absolute;
-//     right: 20px;
-//     bottom: 0;
-//     cursor: pointer;
-//     z-index: 20;
-//     opacity: 1;
-//     width: 50px;
-//     height: 50px;
-//     text-align: center;
-//     border: 1px solid #eee;
-//     line-height: 50px;
-// }
 @include mobile {
     .tab__btn__wrap,
     .pannel__list__wrap {
@@ -1306,3 +1293,6 @@
         margin: 0 auto;
     }
 }
+
+//product sub css
+
