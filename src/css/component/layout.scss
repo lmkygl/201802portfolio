@@ -1357,6 +1357,7 @@
 .product__sub__text__wrap {
     margin-top: 150px;
     padding-bottom: 100px;
+    position: relative;
     .text__tab__btn {
         width: 40%;
         border-bottom: 1px solid #ccc;
@@ -1370,9 +1371,6 @@
             padding-bottom: 20px;
             padding-left: 5px;
             text-align: center;
-            &.last {
-                border: none;
-            }
         }
         .select__tab {
             color: $font-color;
@@ -1380,14 +1378,18 @@
         .line {
             font-size: 13px;
         }
-        
     }
     .text__tab__pannel {
         margin-top: 30px;
         overflow: hidden;
+        height: 200px;
+        
+        .pannel__text{
+            position: absolute;
+        }
         .pannel__title{
             color: #be9673;
-            font-size: 20px;
+            font-size: 25px;
         }
         .btn_content_txt{
             margin-top: 10px;
@@ -1396,11 +1398,12 @@
         }
     }
 }
-.pannel__image{
-    height: 700px;    
+.pannel__image{    
     position: relative;
+    height: 700px;
     li{
-        width: 85%;
+        position: absolute;
+        width: 100%;
         height: 700px;
     }
 }
@@ -1409,8 +1412,8 @@
     background: url('./../img/odense_jante.jpg') no-repeat left bottom;
 }
 .pannel__image__jant2{
-    background: url('./../img/odense_jante2.jpg') no-repeat left bottom;
+    background: url('./../img/odense_jante2.jpg') no-repeat bottom center;
 }
 .pannel__image__jant3{
-    background: url('./../img/odense_janet3.jpg') no-repeat left bottom;
+    background: url('./../img/odense_janet3.jpg') no-repeat center;
 }

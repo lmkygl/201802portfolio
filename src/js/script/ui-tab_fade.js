@@ -13,14 +13,10 @@
         console.log($target);
 
         tab_id = $target.attr('data-id');
-        // console.log(tab_id);
-        // tab select
         $tab_btn.removeClass('select__tab');
         $tab_btn.eq(tab_id).addClass('select__tab');
 
-        // tab_content = $('[data-content-id="' + tab_id + '"]');
-        // console.log(tab_content);
-
+        
         if (tab_id == 0) {
             // $tab_con.eq(1).show();
             $tab_con.fadeOut();
