@@ -1384,7 +1384,11 @@
         overflow: hidden;
         height: 200px;
         .pannel__text{
+            display: none;
             position: absolute;
+            &.active{
+                display: block;
+            }
         }
         .pannel__title{
             color: #be9673;
