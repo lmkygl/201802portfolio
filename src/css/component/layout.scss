@@ -1299,7 +1299,6 @@
     .slide__wrap {
         overflow: hidden;
         position: relative;
-        height: 400px;
         .slider {
             width: 300%;
             .scene {
@@ -1383,44 +1382,87 @@
         margin-top: 30px;
         overflow: hidden;
         height: 200px;
-        .pannel__text{
+        .pannel__text {
             display: none;
             position: absolute;
-            &.active{
+            &.active {
                 display: block;
             }
         }
-        .pannel__title{
+        .pannel__title {
             color: #be9673;
             font-size: 25px;
         }
-        .btn_content_txt{
+        .btn_content_txt {
             margin-top: 10px;
             font-size: 14px;
             line-height: 20px;
         }
     }
 }
-.pannel__image{    
+
+.pannel__image {
     position: relative;
     height: 700px;
-    li{
+    li {
         position: absolute;
         width: 100%;
         height: 700px;
         display: none;
-        &.active{
+        &.active {
             display: block;
         }
     }
 }
 
-.pannel_image_jant{
+.pannel_image_jant {
     background: url('./../img/odense_jante.jpg') no-repeat left bottom;
 }
-.pannel__image__jant2{
+
+.pannel__image__jant2 {
     background: url('./../img/odense_jante2.jpg') no-repeat bottom center;
 }
-.pannel__image__jant3{
+
+.pannel__image__jant3 {
     background: url('./../img/odense_janet3.jpg') no-repeat center;
+}
+
+@include mobile {
+    .indecator__slide__wrap {
+        .slide__wrap {
+            overflow: hidden;
+            position: relative;
+            .slider {
+                width: 300%;
+                .scene {
+                    float: left;
+                    width: 33.3%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .product__sub__text__wrap {
+        width: 95%;
+        margin: 150px auto 0;
+        .text__tab__btn {
+            width: 80%;
+        }
+        .text__tab__pannel {
+            margin-top: 30px;
+            overflow: hidden;
+            height: 150px;
+            .pannel__text {
+                width: 90%;
+            }
+        }
+    }
+    .pannel__image {
+        height: 500px;
+        li {
+            height: 500px;
+        }
+    }
 }
