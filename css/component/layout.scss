@@ -1426,6 +1426,46 @@
 .pannel__image__jant3 {
     background: url('./../img/odense_janet3.jpg') no-repeat center;
 }
+.pannel_image_atelier {
+    background: url('./../img/odense_atelier.jpg') no-repeat;
+    background-size: contain;
+}
+
+.pannel__image__atelier2 {
+    background: url('./../img/odense_atelier2.jpg') no-repeat;
+    background-size: contain;
+}
+
+.pannel__image__atelier3 {
+    background: url('./../img/odense_atelier3.jpg') no-repeat bottom;
+}
+
+.pannel_image_hygge {
+    background: url('./../img/odense_hygge.jpg') no-repeat;
+    background-size: contain;
+}
+
+.pannel__image__hygge2 {
+    background: url('./../img/odense_hygge2.jpg') no-repeat;
+    background-size: contain;
+}
+
+.pannel__image__hygge3 {
+    background: url('./../img/odense_hygge3.jpg') no-repeat;
+    background-size: contain;
+}
+.pannel_image_plating{
+    background: url('./../img/odense_plating.jpg') no-repeat;
+    background-size: contain;
+}
+.pannel__image__plating2 {
+    background: url('./../img/main_side_platingcook.jpg') no-repeat center bottom;
+}
+
+.pannel__image__plating3 {
+    background: url('./../img/main_side_platingcook2.jpg') no-repeat center bottom;
+}
+
 
 @include mobile {
     .indecator__slide__wrap {

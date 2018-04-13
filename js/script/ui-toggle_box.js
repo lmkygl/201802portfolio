@@ -11,7 +11,6 @@
         var $sponsorship_box = $(e.target).parents('[data-ui-btn="toggle_box"]');
         var $product_area = $sponsorship_box.find('[data-ui="sponsorship_product_area"]');
 
-        console.log($target.data);
 
         if (!animating) {
             animating = true;
