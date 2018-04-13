@@ -1439,6 +1439,22 @@
 .pannel__image__atelier3 {
     background: url('./../img/odense_atelier3.jpg') no-repeat bottom;
 }
+
+.pannel_image_hygge {
+    background: url('./../img/odense_hygge.jpg') no-repeat;
+    background-size: contain;
+}
+
+.pannel__image__hygge2 {
+    background: url('./../img/odense_hygge2.jpg') no-repeat;
+    background-size: contain;
+}
+
+.pannel__image__hygge3 {
+    background: url('./../img/odense_hygge3.jpg') no-repeat;
+    background-size: contain;
+}
+
 @include mobile {
     .indecator__slide__wrap {
         .slide__wrap {
