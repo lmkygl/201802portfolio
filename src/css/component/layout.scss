@@ -1426,7 +1426,19 @@
 .pannel__image__jant3 {
     background: url('./../img/odense_janet3.jpg') no-repeat center;
 }
+.pannel_image_atelier {
+    background: url('./../img/odense_atelier.jpg') no-repeat;
+    background-size: contain;
+}
 
+.pannel__image__atelier2 {
+    background: url('./../img/odense_atelier2.jpg') no-repeat;
+    background-size: contain;
+}
+
+.pannel__image__atelier3 {
+    background: url('./../img/odense_atelier3.jpg') no-repeat bottom;
+}
 @include mobile {
     .indecator__slide__wrap {
         .slide__wrap {
