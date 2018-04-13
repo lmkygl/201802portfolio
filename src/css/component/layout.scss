@@ -1454,6 +1454,18 @@
     background: url('./../img/odense_hygge3.jpg') no-repeat;
     background-size: contain;
 }
+.pannel_image_plating{
+    background: url('./../img/odense_plating.jpg') no-repeat;
+    background-size: contain;
+}
+.pannel__image__plating2 {
+    background: url('./../img/main_side_platingcook.jpg') no-repeat center bottom;
+}
+
+.pannel__image__plating3 {
+    background: url('./../img/main_side_platingcook2.jpg') no-repeat center bottom;
+}
+
 
 @include mobile {
     .indecator__slide__wrap {
