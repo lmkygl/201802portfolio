@@ -52,14 +52,14 @@
     }
 
     $btn.on('click', slide_effect);
-    $slide_area.hammer().on('swipe', function(e) {
+    $slide_area.hammer().on('swipe', function (e) {
         var direction = e.gesture.offsetDirection;
+        var $slider = $(e.currentTarget);
 
-        console.log(direction);
-        if(direction === 2){
-            $('.interval__next').trigger('click');
-        }else {
-            $('.prve_btn').trigger('click');
+        if (direction === 2) {
+            $slider.find('.next_btn').trigger('click');
+        } else {
+            $slider.find('.prve_btn').trigger('click');
         }
     });
 
@@ -77,7 +77,7 @@
             startInterval();
         }
     });
-    $slide_area.on('mouseenter mouseleave', function(e){       
+    $slide_area.on('mouseenter mouseleave', function (e) {
         if (e.type === 'mouseenter') {
             clearInterval(interval);
         } else {
