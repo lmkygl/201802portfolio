@@ -1,27 +1,5 @@
 @import '../mixin/config.scss';
 
-.section__area {
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.section1 {
-    height: 800px;
-    overflow: hidden;
-}
-
-// 말줄입표
-.line__box {
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    word-wrap: normal !important;
-    display: block;
-    height: 30px;
-    line-height: 30px;
-}
-
 .card__style {
     background-color: #fff;
     position: relative;

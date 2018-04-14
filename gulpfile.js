@@ -27,7 +27,8 @@ gulp.task('script', function(){
 gulp.task('vendorjs', function(){
     return gulp.src([
         './node_modules/jquery/dist/jquery.min.js',
-        './node_modules/gsap/src/minified/TweenMax.min.js'
+        './node_modules/gsap/src/minified/TweenMax.min.js',
+        './node_modules/hammerjs/hammer.min.js'
     ])
     .pipe(concat({
         path: 'vendor.js'

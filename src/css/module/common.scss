@@ -61,3 +61,14 @@ button:hover {
 .full__width {
     width: 100%;
 }
+// 말줄입표
+.line__box {
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal !important;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
