@@ -52,6 +52,16 @@
     }
 
     $btn.on('click', slide_effect);
+    $slide_area.hammer().on('swipe', function(e) {
+        var direction = e.gesture.offsetDirection;
+
+        console.log(direction);
+        if(direction === 2){
+            $('.interval__next').trigger('click');
+        }else {
+            $('.prve_btn').trigger('click');
+        }
+    });
 
     function startInterval() {
         clearInterval(interval);

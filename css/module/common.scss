@@ -44,3 +44,31 @@ button:hover {
     border: 1px solid #333;
     transition: 0.5s;
 }
+
+.max__width {
+    width: $max-width;
+    margin: 0 auto;
+    @include mobile {
+        width: 100%;
+        overflow: hideen;
+    }
+    @include tablet {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.full__width {
+    width: 100%;
+}
+// 말줄입표
+.line__box {
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal !important;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
